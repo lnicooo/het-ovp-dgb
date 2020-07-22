@@ -1,0 +1,116 @@
+# MPD log
+1000001-mpd-connection-info
+1000002-mpd-list-commands
+9000001-break-list
+9000002-mpd-context-info
+9000003-mpd-list-processor-info
+9000004-mpd-list-events
+9000005-stack-info-frame
+9000006-data-disassemble -s $pc -e "$pc+4" -- 0
+9000007-break-list
+9000008-mpd-context-info
+9000009-mpd-list-processor-info
+9000010-mpd-list-events
+9000011-stack-info-frame
+9000012-data-disassemble -s $pc -e "$pc+4" -- 0
+1000003-mpd-select-processor hetProcessorShared/P1
+9000013-break-list
+9000014-mpd-context-info
+9000015-mpd-list-processor-info
+9000016-stack-info-frame
+9000017-data-disassemble -s $pc -e "$pc+64" -- 0
+1000004-mpd-select-processor hetProcessorShared/P0
+9000018-break-list
+9000019-mpd-context-info
+9000020-mpd-list-processor-info
+9000021-stack-info-frame
+9000022-data-disassemble -s $pc -e "$pc+64" -- 0
+1000005-mpd-select-processor hetProcessorShared/P2
+9000023-break-list
+9000024-mpd-context-info
+9000025-mpd-list-processor-info
+9000026-stack-info-frame
+9000027-data-disassemble -s $pc -e "$pc+64" -- 0
+1000006-mpd-select-processor hetProcessorShared/P1
+9000028-break-list
+9000029-mpd-context-info
+9000030-mpd-list-processor-info
+9000031-stack-info-frame
+9000032-data-disassemble -s $pc -e "$pc+64" -- 0
+1000007-mpd-select-processor hetProcessorShared/P0
+9000033-break-list
+9000034-mpd-context-info
+9000035-mpd-list-processor-info
+9000036-stack-info-frame
+9000037-data-disassemble -s $pc -e "$pc+64" -- 0
+1000008-mpd-select-processor hetProcessorShared/P1
+9000038-break-list
+9000039-mpd-context-info
+9000040-mpd-list-processor-info
+9000041-stack-info-frame
+9000042-data-disassemble -s $pc -e "$pc+64" -- 0
+1000009-mpd-select-processor hetProcessorShared/P1
+9000043-break-list
+9000044-mpd-context-info
+9000045-mpd-list-processor-info
+9000046-stack-info-frame
+9000047-data-disassemble -s $pc -e "$pc+64" -- 0
+1000010-mpd-select-processor hetProcessorShared/P0
+9000048-break-list
+9000049-mpd-context-info
+9000050-mpd-list-processor-info
+9000051-stack-info-frame
+9000052-data-disassemble -s $pc -e "$pc+64" -- 0
+9000053-file-list-exec-source-files
+9000054-break-list
+9000055-mpd-context-info
+9000056-mpd-list-processor-info
+9000057-stack-info-frame
+9000058-data-disassemble -s $pc -e "$pc+64" -- 0
+1000011-exec-next-instruction
+#
+#GDB is not enabled for this processor.
+#Only 'stepi' (step instruction) and 'continue' can be used to run the platform in assembler-mode debug.
+#
+9000059-file-list-exec-source-files
+9000060-break-list
+9000061-mpd-context-info
+9000062-mpd-list-processor-info
+9000063-stack-info-frame
+9000064-data-disassemble -s $pc -e "$pc+64" -- 0
+1000012-exec-next-instruction
+#
+#GDB is not enabled for this processor.
+#Only 'stepi' (step instruction) and 'continue' can be used to run the platform in assembler-mode debug.
+#
+9000065-file-list-exec-source-files
+9000066-break-list
+9000067-mpd-context-info
+9000068-mpd-list-processor-info
+9000069-stack-info-frame
+9000070-data-disassemble -s $pc -e "$pc+64" -- 0
+1000013-exec-next-instruction
+#
+#GDB is not enabled for this processor.
+#Only 'stepi' (step instruction) and 'continue' can be used to run the platform in assembler-mode debug.
+#
+9000071-file-list-exec-source-files
+9000072-break-list
+9000073-mpd-context-info
+9000074-mpd-list-processor-info
+9000075-stack-info-frame
+9000076-data-disassemble -s $pc -e "$pc+64" -- 0
+1000014-mpd-select-processor hetProcessorShared/P1
+9000077-file-list-exec-source-files
+9000078-break-list
+9000079-mpd-context-info
+9000080-mpd-list-processor-info
+9000081-stack-info-frame
+9000082-data-disassemble -s $pc -e "$pc+64" -- 0
+1000015-exec-continue
+#0x1730 <_exit+68>:	l.jalr   r4
+1000016-mpd-select-processor hetProcessorShared/P0
+1000017-mpd-select-processor hetProcessorShared/P2
+1000018-mpd-select-processor hetProcessorShared/P2
+1000019-gdb-exit
+# End MPD log
