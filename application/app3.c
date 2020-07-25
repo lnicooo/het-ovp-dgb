@@ -17,11 +17,35 @@
  */
 
 #include <stdio.h>
-#include <stdlib.h>
+#define NUM 3
+#define SHAREDMEM 0x00
+// Buffer in shared memory area
+volatile unsigned *buffer = (volatile unsigned *) (SHAREDMEM + NUM*16*4);
 
-int main(int argc, char **argv) {
+// Calculate Fibonnacci series
+unsigned fib(unsigned i) {
+    return (i>1) ? fib(i-1) + fib(i-2) : i;
+}
 
-    printf("\nHello World from P2 RISCV using harness.exe\n\n");
+int main () {
+    unsigned i, b, v;
+    printf("app%u starting\n", NUM);
+    for ( i = 0 ; i < 50000 ; i++ ) {
+        // Do some processing
+        v = fib(10);
 
+        // Write to buffer
+        for ( b = 0 ; b < 16 ; b++ )
+            buffer[b] = v + NUM;
+
+        // Check values in buffer
+        for ( b = 0 ; b < 16 ; b++ ) {
+            if ( buffer[b] != v + NUM ) {
+                printf("app%u: buffer[%u] corrupt\n", NUM, b);
+                return 1;
+            }
+        }
+    }
+    printf("app%u complete\n", NUM);
     return 0;
 }

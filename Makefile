@@ -8,16 +8,17 @@ include $(IMPERAS_HOME)/bin/Makefile.include
 # Makefile to build the test applications and run platform simulation
 #
 
-all: applications module
+all: applications modules 
 
-module:
+modules:
 	$(V) $(MAKE) -C module
 
 applications:
 	$(V) $(MAKE) -C application
 
 # Start simulaiton
-run: module applications
+run: modules applications
+	@echo $(RUN_ARGS)
 	@echo "Running Imperas Simulation Platform"
 	$(V) harness.exe --modulefile module/model.${IMPERAS_SHRSUF} \
 	                 --program P0=application/app1.OR1K.elf \
@@ -26,20 +27,20 @@ run: module applications
                      --output imperas.log
 
 # Launch Imperas in interactive mode 
-debug: module applications
+debug: modules applications
 	$(V) harness.exe --modulefile module/model.${IMPERAS_SHRSUF} \
-	                 --program P0=application/app2.OR1K.elf \
-	                 --program P1=application/app1.OR1K.elf \
-	                 --program P2=application/app3.RISCV32I.elf \
+	                 --program P0=application/app1.OR1K.elf \
+	                 --program P1=application/app2.RISCV32I.elf \
+                     --program P2=application/app3.RISCV32I.elf \
 	                 --output imperas.log \
                      --mpdconsole
 
-gui: module applications
+gui: modules applications
 	@echo "Launching Imperas Simulation Platform (iGui)"
 	$(V) harness.exe --modulefile module/model.${IMPERAS_SHRSUF} \
-	                 --program P0=application/app2.OR1K.elf \
-	                 --program P1=application/app1.OR1K.elf \
-	                 --program P2=application/app3.RISCV32I.elf \
+	                 --program P0=application/app1.OR1K.elf \
+	                 --program P1=application/app2.RISCV32I.elf \
+                     --program P2=application/app3.RISCV32I.elf \
                      --output imperas.log\
                      --mpdigui
 
