@@ -5,15 +5,18 @@ Copyright (c) 2005-2019 Imperas Software Ltd.  Contains Imperas Proprietary Info
 Licensed Software, All Rights Reserved.
 Visit www.IMPERAS.com for multicore debug, verification and analysis solutions.
 
-CpuManagerMulti started: Sat Jul 25 15:37:41 2020
+CpuManagerMulti started: Mon Jul 27 22:29:45 2020
 
 
-Info (GDBT_PORT) Host: Armitage, Port: 59761
+Info (GDBT_PORT) Host: Armitage, Port: 50205
 Info (GDBT_WAIT) Waiting for remote debugger to connect...
 Info (GDBT_MPD) Client connected to platform
+app3 starting
+app2 starting
+app1 starting
 Info (GDBT_KILL) Client requested shutdown
 
-CpuManagerMulti finished: Sat Jul 25 15:38:56 2020
+CpuManagerMulti finished: Mon Jul 27 23:13:02 2020
 
 
 CpuManagerMulti (64-Bit) v20191106.0 Open Virtual Platform simulator from www.IMPERAS.com.

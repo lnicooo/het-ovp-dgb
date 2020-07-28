@@ -52,10 +52,10 @@ static OP_CONSTRUCT_FN(instantiateComponents) {
 
     const char *P0_path = opVLNVString(
         0, // use the default VLNV path
-        0,
-        0,
+        "ovpworld.org",
+        "processor",
         "or1k",
-        0,
+        "1.0",
         OP_PROCESSOR,
         1   // report errors
     );

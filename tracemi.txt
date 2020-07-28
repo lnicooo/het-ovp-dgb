@@ -6,13 +6,13 @@
 <send-MPD> 9000002-mpd-context-info
 <send-MPD> 9000003-stack-info-frame
 <send-MPD> 9000004-data-disassemble -s $pc -e "$pc+4" -- 0
-<recv-MPD> 1000001^done,mpd-connection-info={mpd-hostname="Armitage",mpd-pid="10270",mpd-exec="/opt/imperas/Imperas.20191106/bin/Linux64/mpd.exe",cwd="/home/nicooo/Documentos/Mestrado/SCHIP/OVP/het-ovp-dbg",host-hostname="Armitage",host-pid="10266",host-exec="/opt/imperas/Imperas.20191106/bin/Linux64/harness.exe",platform="hetProcessorShared",build-directory="/home/release/build/20191106.0/Imperas"}
+<recv-MPD> 1000001^done,mpd-connection-info={mpd-hostname="Armitage",mpd-pid="15875",mpd-exec="/opt/imperas/Imperas.20191106/bin/Linux64/mpd.exe",cwd="/home/nicooo/Documentos/Mestrado/SCHIP/OVP/het-ovp-dbg",host-hostname="Armitage",host-pid="15871",host-exec="/opt/imperas/Imperas.20191106/bin/Linux64/harness.exe",platform="BuggyRiscv",build-directory="/home/release/build/20191106.0/Imperas"}
 <recv-MPD> (mpd) 
-<recv-MPD> 1000002^done,mpd-list-commands=[{processor="hetProcessorShared/P2",toolname="",commands=[{cmdname="dumpTLB",class="QUERY",object="TLB",action="QUERY",tclcmd="::hetProcessorShared::P2::dumpTLB",handle="34",args=[]},{cmdname="isync",class="DEFAULT",object="",action="",tclcmd="::hetProcessorShared::P2::isync",handle="30",args=[{argname="addresshi",help="end address of synchronous execution range",type="uns64",class="default",handle="32",get="0"},{argname="addresslo",help="start address of synchronous execution range",type="uns64",class="default",handle="31",get="0"}]},{cmdname="itrace",class="MODE",object="CPU",action="TRACE",tclcmd="::hetProcessorShared::P2::itrace",handle="22",args=[{argname="after",help="apply after this many instructions",type="uns64",class="default",handle="29",get="0"},{argname="enable",help="enable instruction tracing",type="bool",class="menuenable",handle="23",get="1",value="0"},{argname="instructioncount",help="include the instruction number in each trace",type="bool",class="menu",handle="24",get="1",value="0"},{argname="off",help="disable instruction tracing",type="bool",class="default",handle="28",get="0"},{argname="on",help="enable instruction tracing",type="bool",class="default",handle="27",get="0"},{argname="registerchange",help="show registers changed by this instruction",type="bool",class="menu",handle="26",get="1",value="0"},{argname="registers",help="show registers after each trace",type="bool",class="menu",handle="25",get="1",value="0"}]}]},{processor="hetProcessorShared/P1",toolname="",commands=[{cmdname="dumpTLB",class="QUERY",object="TLB",action="QUERY",tclcmd="::hetProcessorShared::P1::dumpTLB",handle="33",args=[]},{cmdname="isync",class="DEFAULT",object="",action="",tclcmd="::hetProcessorShared::P1::isync",handle="19",args=[{argname="addresshi",help="end address of synchronous execution range",type="uns64",class="default",handle="21",get="0"},{argname="addresslo",help="start address of synchronous execution range",type="uns64",class="default",handle="20",get="0"}]},{cmdname="itrace",class="MODE",object="CPU",action="TRACE",tclcmd="::hetProcessorShared::P1::itrace",handle="11",args=[{argname="after",help="apply after this many instructions",type="uns64",class="default",handle="18",get="0"},{argname="enable",help="enable instruction tracing",type="bool",class="menuenable",handle="12",get="1",value="0"},{argname="instructioncount",help="include the instruction number in each trace",type="bool",class="menu",handle="13",get="1",value="0"},{argname="off",help="disable instruction tracing",type="bool",class="default",handle="17",get="0"},{argname="on",help="enable instruction tracing",type="bool",class="default",handle="16",get="0"},{argname="registerchange",help="show registers changed by this instruction",type="bool",class="menu",handle="15",get="1",value="0"},{argname="registers",help="show registers after each trace",type="bool",class="menu",handle="14",get="1",value="0"}]}]},{processor="hetProcessorShared/P0",toolname="",commands=[{cmdname="isync",class="DEFAULT",object="",action="",tclcmd="::hetProcessorShared::P0::isync",handle="8",args=[{argname="addresshi",help="end address of synchronous execution range",type="uns64",class="default",handle="10",get="0"},{argname="addresslo",help="start address of synchronous execution range",type="uns64",class="default",handle="9",get="0"}]},{cmdname="itrace",class="MODE",object="CPU",action="TRACE",tclcmd="::hetProcessorShared::P0::itrace",handle="0",args=[{argname="after",help="apply after this many instructions",type="uns64",class="default",handle="7",get="0"},{argname="enable",help="enable instruction tracing",type="bool",class="menuenable",handle="1",get="1",value="0"},{argname="instructioncount",help="include the instruction number in each trace",type="bool",class="menu",handle="2",get="1",value="0"},{argname="off",help="disable instruction tracing",type="bool",class="default",handle="6",get="0"},{argname="on",help="enable instruction tracing",type="bool",class="default",handle="5",get="0"},{argname="registerchange",help="show registers changed by this instruction",type="bool",class="menu",handle="4",get="1",value="0"},{argname="registers",help="show registers after each trace",type="bool",class="menu",handle="3",get="1",value="0"}]}]}]
+<recv-MPD> 1000002^done,mpd-list-commands=[{processor="BuggyRiscv/P2",toolname="",commands=[{cmdname="dumpTLB",class="QUERY",object="TLB",action="QUERY",tclcmd="::BuggyRiscv::P2::dumpTLB",handle="34",args=[]},{cmdname="isync",class="DEFAULT",object="",action="",tclcmd="::BuggyRiscv::P2::isync",handle="30",args=[{argname="addresshi",help="end address of synchronous execution range",type="uns64",class="default",handle="32",get="0"},{argname="addresslo",help="start address of synchronous execution range",type="uns64",class="default",handle="31",get="0"}]},{cmdname="itrace",class="MODE",object="CPU",action="TRACE",tclcmd="::BuggyRiscv::P2::itrace",handle="22",args=[{argname="after",help="apply after this many instructions",type="uns64",class="default",handle="29",get="0"},{argname="enable",help="enable instruction tracing",type="bool",class="menuenable",handle="23",get="1",value="0"},{argname="instructioncount",help="include the instruction number in each trace",type="bool",class="menu",handle="24",get="1",value="0"},{argname="off",help="disable instruction tracing",type="bool",class="default",handle="28",get="0"},{argname="on",help="enable instruction tracing",type="bool",class="default",handle="27",get="0"},{argname="registerchange",help="show registers changed by this instruction",type="bool",class="menu",handle="26",get="1",value="0"},{argname="registers",help="show registers after each trace",type="bool",class="menu",handle="25",get="1",value="0"}]}]},{processor="BuggyRiscv/P1",toolname="",commands=[{cmdname="dumpTLB",class="QUERY",object="TLB",action="QUERY",tclcmd="::BuggyRiscv::P1::dumpTLB",handle="33",args=[]},{cmdname="isync",class="DEFAULT",object="",action="",tclcmd="::BuggyRiscv::P1::isync",handle="19",args=[{argname="addresshi",help="end address of synchronous execution range",type="uns64",class="default",handle="21",get="0"},{argname="addresslo",help="start address of synchronous execution range",type="uns64",class="default",handle="20",get="0"}]},{cmdname="itrace",class="MODE",object="CPU",action="TRACE",tclcmd="::BuggyRiscv::P1::itrace",handle="11",args=[{argname="after",help="apply after this many instructions",type="uns64",class="default",handle="18",get="0"},{argname="enable",help="enable instruction tracing",type="bool",class="menuenable",handle="12",get="1",value="0"},{argname="instructioncount",help="include the instruction number in each trace",type="bool",class="menu",handle="13",get="1",value="0"},{argname="off",help="disable instruction tracing",type="bool",class="default",handle="17",get="0"},{argname="on",help="enable instruction tracing",type="bool",class="default",handle="16",get="0"},{argname="registerchange",help="show registers changed by this instruction",type="bool",class="menu",handle="15",get="1",value="0"},{argname="registers",help="show registers after each trace",type="bool",class="menu",handle="14",get="1",value="0"}]}]},{processor="BuggyRiscv/P0",toolname="",commands=[{cmdname="isync",class="DEFAULT",object="",action="",tclcmd="::BuggyRiscv::P0::isync",handle="8",args=[{argname="addresshi",help="end address of synchronous execution range",type="uns64",class="default",handle="10",get="0"},{argname="addresslo",help="start address of synchronous execution range",type="uns64",class="default",handle="9",get="0"}]},{cmdname="itrace",class="MODE",object="CPU",action="TRACE",tclcmd="::BuggyRiscv::P0::itrace",handle="0",args=[{argname="after",help="apply after this many instructions",type="uns64",class="default",handle="7",get="0"},{argname="enable",help="enable instruction tracing",type="bool",class="menuenable",handle="1",get="1",value="0"},{argname="instructioncount",help="include the instruction number in each trace",type="bool",class="menu",handle="2",get="1",value="0"},{argname="off",help="disable instruction tracing",type="bool",class="default",handle="6",get="0"},{argname="on",help="enable instruction tracing",type="bool",class="default",handle="5",get="0"},{argname="registerchange",help="show registers changed by this instruction",type="bool",class="menu",handle="4",get="1",value="0"},{argname="registers",help="show registers after each trace",type="bool",class="menu",handle="3",get="1",value="0"}]}]}]
 <recv-MPD> (mpd) 
 <recv-MPD> 9000001^done,BreakpointTable={body=[]}
 <recv-MPD> (mpd) 
-<recv-MPD> 9000002^done,mpd-context-info={processor="hetProcessorShared/P2",time="0"}
+<recv-MPD> 9000002^done,mpd-context-info={processor="BuggyRiscv/P2",time="0"}
 <send-MPD> 9000005-break-list
 <send-MPD> 9000006-mpd-context-info
 <send-MPD> 9000007-stack-info-frame
@@ -24,540 +24,330 @@
 <recv-MPD> (mpd) 
 <recv-MPD> 9000005^done,BreakpointTable={body=[]}
 <recv-MPD> (mpd) 
-<recv-MPD> 9000006^done,mpd-context-info={processor="hetProcessorShared/P2",time="0"}
+<recv-MPD> 9000006^done,mpd-context-info={processor="BuggyRiscv/P2",time="0"}
 <recv-MPD> (mpd) 
 <recv-MPD> 9000007^done,frame={level="0",addr="0x000100c8",func="_start",arch="riscv:rv32"}
 <recv-MPD> (mpd) 
 <recv-MPD> 9000008^done,asm_insns=[{address="0x000100c8",func-name="_start",offset="0",inst="auipc\tgp,0x18"}]
 <recv-MPD> (mpd) 
+<send-MPD> processor p1
+<recv-MPD> ^error,msg="Invalid processor name 'p1'\n"
+<recv-MPD> &"Invalid processor name 'p1'\n"
+<recv-MPD> ~"Processors in platform:\n"
+<recv-MPD> ~"    P2\n"
+<recv-MPD> ~"    P1\n"
+<recv-MPD> ~"    P0\n"
+<recv-MPD> (mpd) 
+<send-MPD> processor P1
+<recv-MPD> =thread-selected,id="2",group-id="2"
+<recv-MPD> ^done
 <send-MPD> 9000009-break-list
 <send-MPD> 9000010-mpd-context-info
-<send-MPD> 9000011-mpd-list-processor-info
-<send-MPD> 9000012-mpd-list-events
-<send-MPD> 9000013-stack-info-frame
-<send-MPD> 9000014-data-disassemble -s $pc -e "$pc+4" -- 0
+<send-MPD> 9000011-stack-info-frame
+<send-MPD> 9000012-data-disassemble -s $pc -e "$pc+4" -- 0
+<recv-MPD> (mpd) 
 <recv-MPD> 9000009^done,BreakpointTable={body=[]}
 <recv-MPD> (mpd) 
-<recv-MPD> 9000010^done,mpd-context-info={processor="hetProcessorShared/P2",time="0"}
+<recv-MPD> 9000010^done,mpd-context-info={processor="BuggyRiscv/P1",time="0"}
+<send-MPD> 9000013-break-list
+<send-MPD> 9000014-mpd-context-info
+<send-MPD> 9000015-stack-info-frame
+<send-MPD> 9000016-data-disassemble -s $pc -e "$pc+4" -- 0
 <recv-MPD> (mpd) 
-<recv-MPD> 9000011^done,mpd-list-processor-info=[{name="hetProcessorShared/P2",pse="0",id="3",type="riscv",variant="RV32I",icount="0",mode="Machine",exception="InstructionAddressMisaligned",thread-type="processor",endian="little",addressable-size="1",address-size="4"},{name="hetProcessorShared/P1",pse="0",id="2",type="riscv",variant="RV32I",icount="0",mode="Machine",exception="InstructionAddressMisaligned",thread-type="processor",endian="little",addressable-size="1",address-size="4"},{name="hetProcessorShared/P0",pse="0",id="1",type="or1k",variant="generic",icount="0",mode="SUPERVISOR",exception="RST",thread-type="processor",endian="big",addressable-size="1",address-size="4"}]
+<recv-MPD> 9000011^done,frame={level="0",addr="0x000100c8",func="_start",arch="riscv:rv32"}
 <recv-MPD> (mpd) 
-<recv-MPD> 9000012^done,mpd-list-events=["begin","finish","hetProcessorShared/P0/modeswitch","hetProcessorShared/P0/exception","hetProcessorShared/P1/modeswitch","hetProcessorShared/P1/exception","hetProcessorShared/P2/modeswitch","hetProcessorShared/P2/exception"]
+<recv-MPD> 9000012^done,asm_insns=[{address="0x000100c8",func-name="_start",offset="0",inst="auipc\tgp,0x18"}]
 <recv-MPD> (mpd) 
-<recv-MPD> 9000013^done,frame={level="0",addr="0x000100c8",func="_start",arch="riscv:rv32"}
+<recv-MPD> 9000013^done,BreakpointTable={body=[]}
 <recv-MPD> (mpd) 
-<recv-MPD> 9000014^done,asm_insns=[{address="0x000100c8",func-name="_start",offset="0",inst="auipc\tgp,0x18"}]
+<recv-MPD> 9000014^done,mpd-context-info={processor="BuggyRiscv/P1",time="0"}
 <recv-MPD> (mpd) 
-<send-MPD> 1000003-mpd-select-processor hetProcessorShared/P0
-<recv-MPD> 1000003^done,new-thread-id="1",group-id="1"
-<send-MPD> 9000015-break-list
-<send-MPD> 9000016-mpd-context-info
-<send-MPD> 9000017-mpd-list-processor-info
-<send-MPD> 9000018-stack-info-frame
-<send-MPD> 9000019-data-disassemble -s $pc -e "$pc+64" -- 0
+<recv-MPD> 9000015^done,frame={level="0",addr="0x000100c8",func="_start",arch="riscv:rv32"}
 <recv-MPD> (mpd) 
-<recv-MPD> 9000015^done,BreakpointTable={body=[]}
+<recv-MPD> 9000016^done,asm_insns=[{address="0x000100c8",func-name="_start",offset="0",inst="auipc\tgp,0x18"}]
 <recv-MPD> (mpd) 
-<recv-MPD> 9000016^done,mpd-context-info={processor="hetProcessorShared/P0",time="0"}
+<send-MPD> watch buffer[0]
+<recv-MPD> =breakpoint-created,bkpt={number="1",type="hw watchpoint",enabled="y",times="0",ignore="0",disp="keep",processor="BuggyRiscv/P1",thread-groups=["2"],addr="0x80",addrh="0x83",what="buffer[0]",original-location="buffer[0]"}
+<recv-MPD> ~"Created watchpoint 1\n"
+<recv-MPD> ^done
+<send-MPD> 9000017-break-list
+<send-MPD> 9000018-mpd-context-info
+<send-MPD> 9000019-stack-info-frame
+<send-MPD> 9000020-data-disassemble -s $pc -e "$pc+4" -- 0
 <recv-MPD> (mpd) 
-<recv-MPD> 9000017^done,mpd-list-processor-info=[{name="hetProcessorShared/P2",pse="0",id="3",type="riscv",variant="RV32I",icount="0",mode="Machine",exception="InstructionAddressMisaligned",thread-type="processor",endian="little",addressable-size="1",address-size="4"},{name="hetProcessorShared/P1",pse="0",id="2",type="riscv",variant="RV32I",icount="0",mode="Machine",exception="InstructionAddressMisaligned",thread-type="processor",endian="little",addressable-size="1",address-size="4"},{name="hetProcessorShared/P0",pse="0",id="1",type="or1k",variant="generic",icount="0",mode="SUPERVISOR",exception="RST",thread-type="processor",endian="big",addressable-size="1",address-size="4"}]
+<recv-MPD> 9000017^done,BreakpointTable={body=[bkpt={number="1",type="hw watchpoint",enabled="y",times="0",ignore="0",disp="keep",processor="BuggyRiscv/P1",thread-groups=["2"],addr="0x80",addrh="0x83",what="buffer[0]",original-location="buffer[0]"}]}
 <recv-MPD> (mpd) 
-<recv-MPD> 9000018^done,frame={level="0",addr="0x100",func="start"}
+<recv-MPD> 9000018^done,mpd-context-info={processor="BuggyRiscv/P1",time="0"}
 <recv-MPD> (mpd) 
-<recv-MPD> 9000019^done,asm_insns=[{inst="l.addi   r2,r0,0x0",address="0x100",func-name="start",offset="0"},{inst="l.addi   r3,r0,0x0",address="0x104",func-name="start",offset="4"},{inst="l.addi   r4,r0,0x0",address="0x108",func-name="start",offset="8"},{inst="l.addi   r5,r0,0x0",address="0x10c",func-name="start",offset="12"},{inst="l.addi   r6,r0,0x0",address="0x110",func-name="start",offset="16"},{inst="l.addi   r7,r0,0x0",address="0x114",func-name="start",offset="20"},{inst="l.addi   r8,r0,0x0",address="0x118",func-name="start",offset="24"},{inst="l.addi   r9,r0,0x0",address="0x11c",func-name="start",offset="28"},{inst="l.addi   r10,r0,0x0",address="0x120",func-name="start",offset="32"},{inst="l.addi   r11,r0,0x0",address="0x124",func-name="start",offset="36"},{inst="l.addi   r12,r0,0x0",address="0x128",func-name="start",offset="40"},{inst="l.addi   r13,r0,0x0",address="0x12c",func-name="start",offset="44"},{inst="l.addi   r14,r0,0x0",address="0x130",func-name="start",offset="48"},{inst="l.addi   r15,r0,0x0",address="0x134",func-name="start",offset="52"},{inst="l.addi   r16,r0,0x0",address="0x138",func-name="start",offset="56"},{inst="l.addi   r17,r0,0x0",address="0x13c",func-name="start",offset="60"},{inst="l.addi   r18,r0,0x0",address="0x140",func-name="start",offset="64"},{inst="l.addi   r19,r0,0x0",address="0x144",func-name="start",offset="68"},{inst="l.addi   r20,r0,0x0",address="0x148",func-name="start",offset="72"},{inst="l.addi   r21,r0,0x0",address="0x14c",func-name="start",offset="76"}]
+<recv-MPD> 9000019^done,frame={level="0",addr="0x000100c8",func="_start",arch="riscv:rv32"}
 <recv-MPD> (mpd) 
-<send-MPD> 9000020-file-list-exec-source-files
+<recv-MPD> 9000020^done,asm_insns=[{address="0x000100c8",func-name="_start",offset="0",inst="auipc\tgp,0x18"}]
+<recv-MPD> (mpd) 
+<send-MPD> watchignore 1 P1
+<recv-MPD> ^done
 <send-MPD> 9000021-break-list
 <send-MPD> 9000022-mpd-context-info
-<send-MPD> 9000023-mpd-list-processor-info
-<send-MPD> 9000024-stack-info-frame
-<send-MPD> 9000025-data-disassemble -s $pc -e "$pc+64" -- 0
-<recv-MPD> 9000020^done,files=[]
+<send-MPD> 9000023-stack-info-frame
+<send-MPD> 9000024-data-disassemble -s $pc -e "$pc+4" -- 0
 <recv-MPD> (mpd) 
-<recv-MPD> 9000021^done,BreakpointTable={body=[]}
+<recv-MPD> 9000021^done,BreakpointTable={body=[bkpt={number="1",type="hw watchpoint",enabled="y",times="0",ignore="0",disp="keep",processor="BuggyRiscv/P1",thread-groups=["2"],addr="0x80",addrh="0x83",what="buffer[0]",original-location="buffer[0]"}]}
 <recv-MPD> (mpd) 
-<recv-MPD> 9000022^done,mpd-context-info={processor="hetProcessorShared/P0",time="0"}
+<recv-MPD> 9000022^done,mpd-context-info={processor="BuggyRiscv/P1",time="0"}
 <recv-MPD> (mpd) 
-<recv-MPD> 9000023^done,mpd-list-processor-info=[{name="hetProcessorShared/P2",pse="0",id="3",type="riscv",variant="RV32I",icount="0",mode="Machine",exception="InstructionAddressMisaligned",thread-type="processor",endian="little",addressable-size="1",address-size="4"},{name="hetProcessorShared/P1",pse="0",id="2",type="riscv",variant="RV32I",icount="0",mode="Machine",exception="InstructionAddressMisaligned",thread-type="processor",endian="little",addressable-size="1",address-size="4"},{name="hetProcessorShared/P0",pse="0",id="1",type="or1k",variant="generic",icount="0",mode="SUPERVISOR",exception="RST",thread-type="processor",endian="big",addressable-size="1",address-size="4"}]
+<recv-MPD> 9000023^done,frame={level="0",addr="0x000100c8",func="_start",arch="riscv:rv32"}
 <recv-MPD> (mpd) 
-<recv-MPD> 9000024^done,frame={level="0",addr="0x100",func="start"}
+<recv-MPD> 9000024^done,asm_insns=[{address="0x000100c8",func-name="_start",offset="0",inst="auipc\tgp,0x18"}]
 <recv-MPD> (mpd) 
-<recv-MPD> 9000025^done,asm_insns=[{inst="l.addi   r2,r0,0x0",address="0x100",func-name="start",offset="0"},{inst="l.addi   r3,r0,0x0",address="0x104",func-name="start",offset="4"},{inst="l.addi   r4,r0,0x0",address="0x108",func-name="start",offset="8"},{inst="l.addi   r5,r0,0x0",address="0x10c",func-name="start",offset="12"},{inst="l.addi   r6,r0,0x0",address="0x110",func-name="start",offset="16"},{inst="l.addi   r7,r0,0x0",address="0x114",func-name="start",offset="20"},{inst="l.addi   r8,r0,0x0",address="0x118",func-name="start",offset="24"},{inst="l.addi   r9,r0,0x0",address="0x11c",func-name="start",offset="28"},{inst="l.addi   r10,r0,0x0",address="0x120",func-name="start",offset="32"},{inst="l.addi   r11,r0,0x0",address="0x124",func-name="start",offset="36"},{inst="l.addi   r12,r0,0x0",address="0x128",func-name="start",offset="40"},{inst="l.addi   r13,r0,0x0",address="0x12c",func-name="start",offset="44"},{inst="l.addi   r14,r0,0x0",address="0x130",func-name="start",offset="48"},{inst="l.addi   r15,r0,0x0",address="0x134",func-name="start",offset="52"},{inst="l.addi   r16,r0,0x0",address="0x138",func-name="start",offset="56"},{inst="l.addi   r17,r0,0x0",address="0x13c",func-name="start",offset="60"},{inst="l.addi   r18,r0,0x0",address="0x140",func-name="start",offset="64"},{inst="l.addi   r19,r0,0x0",address="0x144",func-name="start",offset="68"},{inst="l.addi   r20,r0,0x0",address="0x148",func-name="start",offset="72"},{inst="l.addi   r21,r0,0x0",address="0x14c",func-name="start",offset="76"}]
+<send-MPD> continue
+<recv-MPD> ^running
 <recv-MPD> (mpd) 
-<send-MPD> 1000004-mpd-select-processor hetProcessorShared/P1
-<recv-MPD> 1000004^done,new-thread-id="2",group-id="2"
-<send-MPD> 9000026-break-list
-<send-MPD> 9000027-mpd-context-info
-<send-MPD> 9000028-mpd-list-processor-info
-<send-MPD> 9000029-stack-info-frame
-<send-MPD> 9000030-data-disassemble -s $pc -e "$pc+64" -- 0
+<recv-MPD> ~"\nWatchpoint 1 for buffer[0] triggered by processor P0\n"
+<recv-MPD> =thread-selected,id="1",group-id="1"
+<recv-MPD> ~"0x10c8 <_main+236>:\tl.lwz    r4,0xfffffff8(r2)\n"
+<recv-MPD> *stopped,reason="watchpoint-trigger",thread-id="1",stopped-threads="all",frame={level="0",addr="0x10c8",func="_main"},wpt={number="1",exp="buffer[0]"}
 <recv-MPD> (mpd) 
-<recv-MPD> 9000026^done,BreakpointTable={body=[]}
+<send-MPD> 9000025-break-list
+<send-MPD> 9000026-mpd-context-info
+<send-MPD> 9000027-stack-info-frame
+<send-MPD> 9000028-data-disassemble -s $pc -e "$pc+4" -- 0
+<recv-MPD> 9000025^done,BreakpointTable={body=[bkpt={number="1",type="hw watchpoint",enabled="y",times="1",ignore="0",disp="keep",processor="BuggyRiscv/P1",thread-groups=["2"],addr="0x80",addrh="0x83",what="buffer[0]",original-location="buffer[0]"}]}
 <recv-MPD> (mpd) 
-<recv-MPD> 9000027^done,mpd-context-info={processor="hetProcessorShared/P1",time="0"}
+<recv-MPD> 9000026^done,mpd-context-info={processor="BuggyRiscv/P0",time="0.001"}
+<send-MPD> 9000029-break-list
+<send-MPD> 9000030-mpd-context-info
+<send-MPD> 9000031-stack-info-frame
+<send-MPD> 9000032-data-disassemble -s $pc -e "$pc+4" -- 0
 <recv-MPD> (mpd) 
-<recv-MPD> 9000028^done,mpd-list-processor-info=[{name="hetProcessorShared/P2",pse="0",id="3",type="riscv",variant="RV32I",icount="0",mode="Machine",exception="InstructionAddressMisaligned",thread-type="processor",endian="little",addressable-size="1",address-size="4"},{name="hetProcessorShared/P1",pse="0",id="2",type="riscv",variant="RV32I",icount="0",mode="Machine",exception="InstructionAddressMisaligned",thread-type="processor",endian="little",addressable-size="1",address-size="4"},{name="hetProcessorShared/P0",pse="0",id="1",type="or1k",variant="generic",icount="0",mode="SUPERVISOR",exception="RST",thread-type="processor",endian="big",addressable-size="1",address-size="4"}]
+<recv-MPD> 9000027^done,frame={level="0",addr="0x10c8",func="_main"}
 <recv-MPD> (mpd) 
-<recv-MPD> 9000029^done,frame={level="0",addr="0x000100c8",func="_start",arch="riscv:rv32"}
+<recv-MPD> 9000028^done,asm_insns=[{inst="l.lwz    r4,0xfffffff8(r2)",address="0x10c8",func-name="_main",offset="236"},{inst="l.sw     0xffffffc0(r2),r4",address="0x10cc",func-name="_main",offset="240"},{inst="l.lwz    r3,0xffffffc0(r2)",address="0x10d0",func-name="_main",offset="244"},{inst="l.addi   r3,r3,0x1",address="0x10d4",func-name="_main",offset="248"},{inst="l.sw     0xffffffbc(r2),r3",address="0x10d8",func-name="_main",offset="252"},{inst="l.lwz    r4,0xffffffbc(r2)",address="0x10dc",func-name="_main",offset="256"},{inst="l.sw     0xfffffff8(r2),r4",address="0x10e0",func-name="_main",offset="260"},{inst="l.j      0x0000104c",address="0x10e4",func-name="_main",offset="264"},{inst="l.nop    0x0",address="0x10e8",func-name="_main",offset="268"},{inst="l.addi   r3,r0,0x0",address="0x10ec",func-name="_main",offset="272"},{inst="l.sw     0xfffffff8(r2),r3",address="0x10f0",func-name="_main",offset="276"},{inst="l.lwz    r4,0xfffffff8(r2)",address="0x10f4",func-name="_main",offset="280"},{inst="l.sw     0xffffffb8(r2),r4",address="0x10f8",func-name="_main",offset="284"},{inst="l.lwz    r3,0xffffffb8(r2)",address="0x10fc",func-name="_main",offset="288"},{inst="l.sfgtui r3,0xf",address="0x1100",func-name="_main",offset="292"},{inst="l.bf     0x000011dc",address="0x1104",func-name="_main",offset="296"},{inst="l.nop    0x0",address="0x1108",func-name="_main",offset="300"},{inst="l.lwz    r4,0xfffffff8(r2)",address="0x110c",func-name="_main",offset="304"},{inst="l.sw     0xffffffb4(r2),r4",address="0x1110",func-name="_main",offset="308"},{inst="l.lwz    r3,0xffffffb4(r2)",address="0x1114",func-name="_main",offset="312"}]
 <recv-MPD> (mpd) 
-<recv-MPD> 9000030^done,asm_insns=[{address="0x000100c8",func-name="_start",offset="0",inst="auipc\tgp,0x18"},{address="0x000100cc",func-name="_start",offset="4",inst="addi\tgp,gp,1204 # 0x2857c"},{address="0x000100d0",func-name="_start",offset="8",inst="addi\ta0,gp,-2024"},{address="0x000100d4",func-name="_start",offset="12",inst="addi\ta2,gp,-1896"},{address="0x000100d8",func-name="_start",offset="16",inst="sub\ta2,a2,a0"},{address="0x000100dc",func-name="_start",offset="20",inst="li\ta1,0"},{address="0x000100e0",func-name="_start",offset="24",inst="jal\tra,0x10484 <memset>"},{address="0x000100e4",func-name="_start",offset="28",inst="auipc\ta0,0x0"},{address="0x000100e8",func-name="_start",offset="32",inst="addi\ta0,a0,680 # 0x1038c <__libc_fini_array>"},{address="0x000100ec",func-name="_start",offset="36",inst="jal\tra,0x10378 <atexit>"},{address="0x000100f0",func-name="_start",offset="40",inst="jal\tra,0x103ec <__libc_init_array>"},{address="0x000100f4",func-name="_start",offset="44",inst="lw\ta0,0(sp)"},{address="0x000100f8",func-name="_start",offset="48",inst="addi\ta1,sp,4"},{address="0x000100fc",func-name="_start",offset="52",inst="li\ta2,0"},{address="0x00010100",func-name="_start",offset="56",inst="jal\tra,0x10260 <main>"},{address="0x00010104",func-name="_start",offset="60",inst="j\t0x10074 <exit>"}]
+<recv-MPD> 9000029^done,BreakpointTable={body=[bkpt={number="1",type="hw watchpoint",enabled="y",times="1",ignore="0",disp="keep",processor="BuggyRiscv/P1",thread-groups=["2"],addr="0x80",addrh="0x83",what="buffer[0]",original-location="buffer[0]"}]}
 <recv-MPD> (mpd) 
-<send-MPD> 9000031-file-list-exec-source-files
-<send-MPD> 9000032-break-list
-<send-MPD> 9000033-mpd-context-info
-<send-MPD> 9000034-mpd-list-processor-info
+<recv-MPD> 9000030^done,mpd-context-info={processor="BuggyRiscv/P0",time="0.001"}
+<recv-MPD> (mpd) 
+<recv-MPD> 9000031^done,frame={level="0",addr="0x10c8",func="_main"}
+<recv-MPD> (mpd) 
+<recv-MPD> 9000032^done,asm_insns=[{inst="l.lwz    r4,0xfffffff8(r2)",address="0x10c8",func-name="_main",offset="236"},{inst="l.sw     0xffffffc0(r2),r4",address="0x10cc",func-name="_main",offset="240"},{inst="l.lwz    r3,0xffffffc0(r2)",address="0x10d0",func-name="_main",offset="244"},{inst="l.addi   r3,r3,0x1",address="0x10d4",func-name="_main",offset="248"},{inst="l.sw     0xffffffbc(r2),r3",address="0x10d8",func-name="_main",offset="252"},{inst="l.lwz    r4,0xffffffbc(r2)",address="0x10dc",func-name="_main",offset="256"},{inst="l.sw     0xfffffff8(r2),r4",address="0x10e0",func-name="_main",offset="260"},{inst="l.j      0x0000104c",address="0x10e4",func-name="_main",offset="264"},{inst="l.nop    0x0",address="0x10e8",func-name="_main",offset="268"},{inst="l.addi   r3,r0,0x0",address="0x10ec",func-name="_main",offset="272"},{inst="l.sw     0xfffffff8(r2),r3",address="0x10f0",func-name="_main",offset="276"},{inst="l.lwz    r4,0xfffffff8(r2)",address="0x10f4",func-name="_main",offset="280"},{inst="l.sw     0xffffffb8(r2),r4",address="0x10f8",func-name="_main",offset="284"},{inst="l.lwz    r3,0xffffffb8(r2)",address="0x10fc",func-name="_main",offset="288"},{inst="l.sfgtui r3,0xf",address="0x1100",func-name="_main",offset="292"},{inst="l.bf     0x000011dc",address="0x1104",func-name="_main",offset="296"},{inst="l.nop    0x0",address="0x1108",func-name="_main",offset="300"},{inst="l.lwz    r4,0xfffffff8(r2)",address="0x110c",func-name="_main",offset="304"},{inst="l.sw     0xffffffb4(r2),r4",address="0x1110",func-name="_main",offset="308"},{inst="l.lwz    r3,0xffffffb4(r2)",address="0x1114",func-name="_main",offset="312"}]
+<recv-MPD> (mpd) 
+<send-MPD> list
+<recv-MPD> ^done
+<send-MPD> 9000033-break-list
+<send-MPD> 9000034-mpd-context-info
 <send-MPD> 9000035-stack-info-frame
-<send-MPD> 9000036-data-disassemble -s $pc -e "$pc+64" -- 0
-<recv-MPD> 9000031^done,files=[{file="app2.c",fullname="/home/nicooo/Documentos/Mestrado/SCHIP/OVP/het-ovp-dbg/application/app2.c"},{file="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/lock.h",fullname="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/lock.h"},{file="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/_types.h",fullname="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/_types.h"},{file="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/lib/gcc/riscv-none-embed/8.1.0/include/stddef.h",fullname="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/lib/gcc/riscv-none-embed/8.1.0/include/stddef.h"},{file="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/reent.h",fullname="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/reent.h"}]
+<send-MPD> 9000036-data-disassemble -s $pc -e "$pc+4" -- 0
 <recv-MPD> (mpd) 
-<recv-MPD> 9000032^done,BreakpointTable={body=[]}
+<recv-MPD> 9000033^done,BreakpointTable={body=[bkpt={number="1",type="hw watchpoint",enabled="y",times="1",ignore="0",disp="keep",processor="BuggyRiscv/P1",thread-groups=["2"],addr="0x80",addrh="0x83",what="buffer[0]",original-location="buffer[0]"}]}
 <recv-MPD> (mpd) 
-<recv-MPD> 9000033^done,mpd-context-info={processor="hetProcessorShared/P1",time="0"}
+<recv-MPD> 9000034^done,mpd-context-info={processor="BuggyRiscv/P0",time="0.001"}
 <recv-MPD> (mpd) 
-<recv-MPD> 9000034^done,mpd-list-processor-info=[{name="hetProcessorShared/P2",pse="0",id="3",type="riscv",variant="RV32I",icount="0",mode="Machine",exception="InstructionAddressMisaligned",thread-type="processor",endian="little",addressable-size="1",address-size="4"},{name="hetProcessorShared/P1",pse="0",id="2",type="riscv",variant="RV32I",icount="0",mode="Machine",exception="InstructionAddressMisaligned",thread-type="processor",endian="little",addressable-size="1",address-size="4"},{name="hetProcessorShared/P0",pse="0",id="1",type="or1k",variant="generic",icount="0",mode="SUPERVISOR",exception="RST",thread-type="processor",endian="big",addressable-size="1",address-size="4"}]
+<recv-MPD> 9000035^done,frame={level="0",addr="0x10c8",func="_main"}
 <recv-MPD> (mpd) 
-<recv-MPD> 9000035^done,frame={level="0",addr="0x000100c8",func="_start",arch="riscv:rv32"}
+<recv-MPD> 9000036^done,asm_insns=[{inst="l.lwz    r4,0xfffffff8(r2)",address="0x10c8",func-name="_main",offset="236"},{inst="l.sw     0xffffffc0(r2),r4",address="0x10cc",func-name="_main",offset="240"},{inst="l.lwz    r3,0xffffffc0(r2)",address="0x10d0",func-name="_main",offset="244"},{inst="l.addi   r3,r3,0x1",address="0x10d4",func-name="_main",offset="248"},{inst="l.sw     0xffffffbc(r2),r3",address="0x10d8",func-name="_main",offset="252"},{inst="l.lwz    r4,0xffffffbc(r2)",address="0x10dc",func-name="_main",offset="256"},{inst="l.sw     0xfffffff8(r2),r4",address="0x10e0",func-name="_main",offset="260"},{inst="l.j      0x0000104c",address="0x10e4",func-name="_main",offset="264"},{inst="l.nop    0x0",address="0x10e8",func-name="_main",offset="268"},{inst="l.addi   r3,r0,0x0",address="0x10ec",func-name="_main",offset="272"},{inst="l.sw     0xfffffff8(r2),r3",address="0x10f0",func-name="_main",offset="276"},{inst="l.lwz    r4,0xfffffff8(r2)",address="0x10f4",func-name="_main",offset="280"},{inst="l.sw     0xffffffb8(r2),r4",address="0x10f8",func-name="_main",offset="284"},{inst="l.lwz    r3,0xffffffb8(r2)",address="0x10fc",func-name="_main",offset="288"},{inst="l.sfgtui r3,0xf",address="0x1100",func-name="_main",offset="292"},{inst="l.bf     0x000011dc",address="0x1104",func-name="_main",offset="296"},{inst="l.nop    0x0",address="0x1108",func-name="_main",offset="300"},{inst="l.lwz    r4,0xfffffff8(r2)",address="0x110c",func-name="_main",offset="304"},{inst="l.sw     0xffffffb4(r2),r4",address="0x1110",func-name="_main",offset="308"},{inst="l.lwz    r3,0xffffffb4(r2)",address="0x1114",func-name="_main",offset="312"}]
 <recv-MPD> (mpd) 
-<recv-MPD> 9000036^done,asm_insns=[{address="0x000100c8",func-name="_start",offset="0",inst="auipc\tgp,0x18"},{address="0x000100cc",func-name="_start",offset="4",inst="addi\tgp,gp,1204 # 0x2857c"},{address="0x000100d0",func-name="_start",offset="8",inst="addi\ta0,gp,-2024"},{address="0x000100d4",func-name="_start",offset="12",inst="addi\ta2,gp,-1896"},{address="0x000100d8",func-name="_start",offset="16",inst="sub\ta2,a2,a0"},{address="0x000100dc",func-name="_start",offset="20",inst="li\ta1,0"},{address="0x000100e0",func-name="_start",offset="24",inst="jal\tra,0x10484 <memset>"},{address="0x000100e4",func-name="_start",offset="28",inst="auipc\ta0,0x0"},{address="0x000100e8",func-name="_start",offset="32",inst="addi\ta0,a0,680 # 0x1038c <__libc_fini_array>"},{address="0x000100ec",func-name="_start",offset="36",inst="jal\tra,0x10378 <atexit>"},{address="0x000100f0",func-name="_start",offset="40",inst="jal\tra,0x103ec <__libc_init_array>"},{address="0x000100f4",func-name="_start",offset="44",inst="lw\ta0,0(sp)"},{address="0x000100f8",func-name="_start",offset="48",inst="addi\ta1,sp,4"},{address="0x000100fc",func-name="_start",offset="52",inst="li\ta2,0"},{address="0x00010100",func-name="_start",offset="56",inst="jal\tra,0x10260 <main>"},{address="0x00010104",func-name="_start",offset="60",inst="j\t0x10074 <exit>"}]
+<send-MPD> list
+<recv-MPD> ^done
+<send-MPD> 9000037-break-list
+<send-MPD> 9000038-mpd-context-info
+<send-MPD> 9000039-stack-info-frame
+<send-MPD> 9000040-data-disassemble -s $pc -e "$pc+4" -- 0
 <recv-MPD> (mpd) 
-<send-MPD> 1000005-mpd-select-processor hetProcessorShared/P2
-<recv-MPD> 1000005^done,new-thread-id="3",group-id="3"
-<send-MPD> 9000037-file-list-exec-source-files
-<send-MPD> 9000038-break-list
-<send-MPD> 9000039-mpd-context-info
-<send-MPD> 9000040-mpd-list-processor-info
-<send-MPD> 9000041-stack-info-frame
-<send-MPD> 9000042-data-disassemble -s $pc -e "$pc+64" -- 0
+<recv-MPD> 9000037^done,BreakpointTable={body=[bkpt={number="1",type="hw watchpoint",enabled="y",times="1",ignore="0",disp="keep",processor="BuggyRiscv/P1",thread-groups=["2"],addr="0x80",addrh="0x83",what="buffer[0]",original-location="buffer[0]"}]}
 <recv-MPD> (mpd) 
-<recv-MPD> 9000037^done,files=[{file="app3.c",fullname="/home/nicooo/Documentos/Mestrado/SCHIP/OVP/het-ovp-dbg/application/app3.c"},{file="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/lock.h",fullname="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/lock.h"},{file="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/_types.h",fullname="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/_types.h"},{file="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/lib/gcc/riscv-none-embed/8.1.0/include/stddef.h",fullname="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/lib/gcc/riscv-none-embed/8.1.0/include/stddef.h"},{file="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/reent.h",fullname="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/reent.h"}]
+<recv-MPD> 9000038^done,mpd-context-info={processor="BuggyRiscv/P0",time="0.001"}
 <recv-MPD> (mpd) 
-<recv-MPD> 9000038^done,BreakpointTable={body=[]}
+<recv-MPD> 9000039^done,frame={level="0",addr="0x10c8",func="_main"}
 <recv-MPD> (mpd) 
-<recv-MPD> 9000039^done,mpd-context-info={processor="hetProcessorShared/P2",time="0"}
+<recv-MPD> 9000040^done,asm_insns=[{inst="l.lwz    r4,0xfffffff8(r2)",address="0x10c8",func-name="_main",offset="236"},{inst="l.sw     0xffffffc0(r2),r4",address="0x10cc",func-name="_main",offset="240"},{inst="l.lwz    r3,0xffffffc0(r2)",address="0x10d0",func-name="_main",offset="244"},{inst="l.addi   r3,r3,0x1",address="0x10d4",func-name="_main",offset="248"},{inst="l.sw     0xffffffbc(r2),r3",address="0x10d8",func-name="_main",offset="252"},{inst="l.lwz    r4,0xffffffbc(r2)",address="0x10dc",func-name="_main",offset="256"},{inst="l.sw     0xfffffff8(r2),r4",address="0x10e0",func-name="_main",offset="260"},{inst="l.j      0x0000104c",address="0x10e4",func-name="_main",offset="264"},{inst="l.nop    0x0",address="0x10e8",func-name="_main",offset="268"},{inst="l.addi   r3,r0,0x0",address="0x10ec",func-name="_main",offset="272"},{inst="l.sw     0xfffffff8(r2),r3",address="0x10f0",func-name="_main",offset="276"},{inst="l.lwz    r4,0xfffffff8(r2)",address="0x10f4",func-name="_main",offset="280"},{inst="l.sw     0xffffffb8(r2),r4",address="0x10f8",func-name="_main",offset="284"},{inst="l.lwz    r3,0xffffffb8(r2)",address="0x10fc",func-name="_main",offset="288"},{inst="l.sfgtui r3,0xf",address="0x1100",func-name="_main",offset="292"},{inst="l.bf     0x000011dc",address="0x1104",func-name="_main",offset="296"},{inst="l.nop    0x0",address="0x1108",func-name="_main",offset="300"},{inst="l.lwz    r4,0xfffffff8(r2)",address="0x110c",func-name="_main",offset="304"},{inst="l.sw     0xffffffb4(r2),r4",address="0x1110",func-name="_main",offset="308"},{inst="l.lwz    r3,0xffffffb4(r2)",address="0x1114",func-name="_main",offset="312"}]
 <recv-MPD> (mpd) 
-<recv-MPD> 9000040^done,mpd-list-processor-info=[{name="hetProcessorShared/P2",pse="0",id="3",type="riscv",variant="RV32I",icount="0",mode="Machine",exception="InstructionAddressMisaligned",thread-type="processor",endian="little",addressable-size="1",address-size="4"},{name="hetProcessorShared/P1",pse="0",id="2",type="riscv",variant="RV32I",icount="0",mode="Machine",exception="InstructionAddressMisaligned",thread-type="processor",endian="little",addressable-size="1",address-size="4"},{name="hetProcessorShared/P0",pse="0",id="1",type="or1k",variant="generic",icount="0",mode="SUPERVISOR",exception="RST",thread-type="processor",endian="big",addressable-size="1",address-size="4"}]
+<send-MPD> list
+<recv-MPD> ^done
+<send-MPD> 9000041-break-list
+<send-MPD> 9000042-mpd-context-info
+<send-MPD> 9000043-stack-info-frame
+<send-MPD> 9000044-data-disassemble -s $pc -e "$pc+4" -- 0
 <recv-MPD> (mpd) 
-<recv-MPD> 9000041^done,frame={level="0",addr="0x000100c8",func="_start",arch="riscv:rv32"}
+<recv-MPD> 9000041^done,BreakpointTable={body=[bkpt={number="1",type="hw watchpoint",enabled="y",times="1",ignore="0",disp="keep",processor="BuggyRiscv/P1",thread-groups=["2"],addr="0x80",addrh="0x83",what="buffer[0]",original-location="buffer[0]"}]}
 <recv-MPD> (mpd) 
-<recv-MPD> 9000042^done,asm_insns=[{address="0x000100c8",func-name="_start",offset="0",inst="auipc\tgp,0x18"},{address="0x000100cc",func-name="_start",offset="4",inst="addi\tgp,gp,1204 # 0x2857c"},{address="0x000100d0",func-name="_start",offset="8",inst="addi\ta0,gp,-2024"},{address="0x000100d4",func-name="_start",offset="12",inst="addi\ta2,gp,-1896"},{address="0x000100d8",func-name="_start",offset="16",inst="sub\ta2,a2,a0"},{address="0x000100dc",func-name="_start",offset="20",inst="li\ta1,0"},{address="0x000100e0",func-name="_start",offset="24",inst="jal\tra,0x10484 <memset>"},{address="0x000100e4",func-name="_start",offset="28",inst="auipc\ta0,0x0"},{address="0x000100e8",func-name="_start",offset="32",inst="addi\ta0,a0,680 # 0x1038c <__libc_fini_array>"},{address="0x000100ec",func-name="_start",offset="36",inst="jal\tra,0x10378 <atexit>"},{address="0x000100f0",func-name="_start",offset="40",inst="jal\tra,0x103ec <__libc_init_array>"},{address="0x000100f4",func-name="_start",offset="44",inst="lw\ta0,0(sp)"},{address="0x000100f8",func-name="_start",offset="48",inst="addi\ta1,sp,4"},{address="0x000100fc",func-name="_start",offset="52",inst="li\ta2,0"},{address="0x00010100",func-name="_start",offset="56",inst="jal\tra,0x10260 <main>"},{address="0x00010104",func-name="_start",offset="60",inst="j\t0x10074 <exit>"}]
+<recv-MPD> 9000042^done,mpd-context-info={processor="BuggyRiscv/P0",time="0.001"}
 <recv-MPD> (mpd) 
-<send-MPD> 1000006-mpd-select-processor hetProcessorShared/P1
-<recv-MPD> 1000006^done,new-thread-id="2",group-id="2"
-<send-MPD> 9000043-file-list-exec-source-files
-<send-MPD> 9000044-break-list
-<send-MPD> 9000045-mpd-context-info
-<send-MPD> 9000046-mpd-list-processor-info
+<recv-MPD> 9000043^done,frame={level="0",addr="0x10c8",func="_main"}
+<recv-MPD> (mpd) 
+<recv-MPD> 9000044^done,asm_insns=[{inst="l.lwz    r4,0xfffffff8(r2)",address="0x10c8",func-name="_main",offset="236"},{inst="l.sw     0xffffffc0(r2),r4",address="0x10cc",func-name="_main",offset="240"},{inst="l.lwz    r3,0xffffffc0(r2)",address="0x10d0",func-name="_main",offset="244"},{inst="l.addi   r3,r3,0x1",address="0x10d4",func-name="_main",offset="248"},{inst="l.sw     0xffffffbc(r2),r3",address="0x10d8",func-name="_main",offset="252"},{inst="l.lwz    r4,0xffffffbc(r2)",address="0x10dc",func-name="_main",offset="256"},{inst="l.sw     0xfffffff8(r2),r4",address="0x10e0",func-name="_main",offset="260"},{inst="l.j      0x0000104c",address="0x10e4",func-name="_main",offset="264"},{inst="l.nop    0x0",address="0x10e8",func-name="_main",offset="268"},{inst="l.addi   r3,r0,0x0",address="0x10ec",func-name="_main",offset="272"},{inst="l.sw     0xfffffff8(r2),r3",address="0x10f0",func-name="_main",offset="276"},{inst="l.lwz    r4,0xfffffff8(r2)",address="0x10f4",func-name="_main",offset="280"},{inst="l.sw     0xffffffb8(r2),r4",address="0x10f8",func-name="_main",offset="284"},{inst="l.lwz    r3,0xffffffb8(r2)",address="0x10fc",func-name="_main",offset="288"},{inst="l.sfgtui r3,0xf",address="0x1100",func-name="_main",offset="292"},{inst="l.bf     0x000011dc",address="0x1104",func-name="_main",offset="296"},{inst="l.nop    0x0",address="0x1108",func-name="_main",offset="300"},{inst="l.lwz    r4,0xfffffff8(r2)",address="0x110c",func-name="_main",offset="304"},{inst="l.sw     0xffffffb4(r2),r4",address="0x1110",func-name="_main",offset="308"},{inst="l.lwz    r3,0xffffffb4(r2)",address="0x1114",func-name="_main",offset="312"}]
+<recv-MPD> (mpd) 
+<send-MPD> print &buffer[b]
+<recv-MPD> ^error,msg="&buffer[b] cannot be evaluated. Expressions are limited to labels, constant integers and register names\n"
+<recv-MPD> &"&buffer[b] cannot be evaluated. Expressions are limited to labels, constant integers and register names\n"
+<recv-MPD> ^done
+<send-MPD> 9000045-break-list
+<send-MPD> 9000046-mpd-context-info
 <send-MPD> 9000047-stack-info-frame
-<send-MPD> 9000048-data-disassemble -s $pc -e "$pc+64" -- 0
+<send-MPD> 9000048-data-disassemble -s $pc -e "$pc+4" -- 0
 <recv-MPD> (mpd) 
-<recv-MPD> 9000043^done,files=[{file="app2.c",fullname="/home/nicooo/Documentos/Mestrado/SCHIP/OVP/het-ovp-dbg/application/app2.c"},{file="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/lock.h",fullname="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/lock.h"},{file="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/_types.h",fullname="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/_types.h"},{file="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/lib/gcc/riscv-none-embed/8.1.0/include/stddef.h",fullname="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/lib/gcc/riscv-none-embed/8.1.0/include/stddef.h"},{file="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/reent.h",fullname="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/reent.h"}]
+<recv-MPD> 9000045^done,BreakpointTable={body=[bkpt={number="1",type="hw watchpoint",enabled="y",times="1",ignore="0",disp="keep",processor="BuggyRiscv/P1",thread-groups=["2"],addr="0x80",addrh="0x83",what="buffer[0]",original-location="buffer[0]"}]}
 <recv-MPD> (mpd) 
-<recv-MPD> 9000044^done,BreakpointTable={body=[]}
+<recv-MPD> 9000046^done,mpd-context-info={processor="BuggyRiscv/P0",time="0.001"}
 <recv-MPD> (mpd) 
-<recv-MPD> 9000045^done,mpd-context-info={processor="hetProcessorShared/P1",time="0"}
+<recv-MPD> 9000047^done,frame={level="0",addr="0x10c8",func="_main"}
 <recv-MPD> (mpd) 
-<recv-MPD> 9000046^done,mpd-list-processor-info=[{name="hetProcessorShared/P2",pse="0",id="3",type="riscv",variant="RV32I",icount="0",mode="Machine",exception="InstructionAddressMisaligned",thread-type="processor",endian="little",addressable-size="1",address-size="4"},{name="hetProcessorShared/P1",pse="0",id="2",type="riscv",variant="RV32I",icount="0",mode="Machine",exception="InstructionAddressMisaligned",thread-type="processor",endian="little",addressable-size="1",address-size="4"},{name="hetProcessorShared/P0",pse="0",id="1",type="or1k",variant="generic",icount="0",mode="SUPERVISOR",exception="RST",thread-type="processor",endian="big",addressable-size="1",address-size="4"}]
+<recv-MPD> 9000048^done,asm_insns=[{inst="l.lwz    r4,0xfffffff8(r2)",address="0x10c8",func-name="_main",offset="236"},{inst="l.sw     0xffffffc0(r2),r4",address="0x10cc",func-name="_main",offset="240"},{inst="l.lwz    r3,0xffffffc0(r2)",address="0x10d0",func-name="_main",offset="244"},{inst="l.addi   r3,r3,0x1",address="0x10d4",func-name="_main",offset="248"},{inst="l.sw     0xffffffbc(r2),r3",address="0x10d8",func-name="_main",offset="252"},{inst="l.lwz    r4,0xffffffbc(r2)",address="0x10dc",func-name="_main",offset="256"},{inst="l.sw     0xfffffff8(r2),r4",address="0x10e0",func-name="_main",offset="260"},{inst="l.j      0x0000104c",address="0x10e4",func-name="_main",offset="264"},{inst="l.nop    0x0",address="0x10e8",func-name="_main",offset="268"},{inst="l.addi   r3,r0,0x0",address="0x10ec",func-name="_main",offset="272"},{inst="l.sw     0xfffffff8(r2),r3",address="0x10f0",func-name="_main",offset="276"},{inst="l.lwz    r4,0xfffffff8(r2)",address="0x10f4",func-name="_main",offset="280"},{inst="l.sw     0xffffffb8(r2),r4",address="0x10f8",func-name="_main",offset="284"},{inst="l.lwz    r3,0xffffffb8(r2)",address="0x10fc",func-name="_main",offset="288"},{inst="l.sfgtui r3,0xf",address="0x1100",func-name="_main",offset="292"},{inst="l.bf     0x000011dc",address="0x1104",func-name="_main",offset="296"},{inst="l.nop    0x0",address="0x1108",func-name="_main",offset="300"},{inst="l.lwz    r4,0xfffffff8(r2)",address="0x110c",func-name="_main",offset="304"},{inst="l.sw     0xffffffb4(r2),r4",address="0x1110",func-name="_main",offset="308"},{inst="l.lwz    r3,0xffffffb4(r2)",address="0x1114",func-name="_main",offset="312"}]
 <recv-MPD> (mpd) 
-<recv-MPD> 9000047^done,frame={level="0",addr="0x000100c8",func="_start",arch="riscv:rv32"}
-<recv-MPD> (mpd) 
-<recv-MPD> 9000048^done,asm_insns=[{address="0x000100c8",func-name="_start",offset="0",inst="auipc\tgp,0x18"},{address="0x000100cc",func-name="_start",offset="4",inst="addi\tgp,gp,1204 # 0x2857c"},{address="0x000100d0",func-name="_start",offset="8",inst="addi\ta0,gp,-2024"},{address="0x000100d4",func-name="_start",offset="12",inst="addi\ta2,gp,-1896"},{address="0x000100d8",func-name="_start",offset="16",inst="sub\ta2,a2,a0"},{address="0x000100dc",func-name="_start",offset="20",inst="li\ta1,0"},{address="0x000100e0",func-name="_start",offset="24",inst="jal\tra,0x10484 <memset>"},{address="0x000100e4",func-name="_start",offset="28",inst="auipc\ta0,0x0"},{address="0x000100e8",func-name="_start",offset="32",inst="addi\ta0,a0,680 # 0x1038c <__libc_fini_array>"},{address="0x000100ec",func-name="_start",offset="36",inst="jal\tra,0x10378 <atexit>"},{address="0x000100f0",func-name="_start",offset="40",inst="jal\tra,0x103ec <__libc_init_array>"},{address="0x000100f4",func-name="_start",offset="44",inst="lw\ta0,0(sp)"},{address="0x000100f8",func-name="_start",offset="48",inst="addi\ta1,sp,4"},{address="0x000100fc",func-name="_start",offset="52",inst="li\ta2,0"},{address="0x00010100",func-name="_start",offset="56",inst="jal\tra,0x10260 <main>"},{address="0x00010104",func-name="_start",offset="60",inst="j\t0x10074 <exit>"}]
-<recv-MPD> (mpd) 
-<send-MPD> 1000007-mpd-select-processor hetProcessorShared/P2
-<recv-MPD> 1000007^done,new-thread-id="3",group-id="3"
 <send-MPD> 9000049-file-list-exec-source-files
 <send-MPD> 9000050-break-list
 <send-MPD> 9000051-mpd-context-info
-<send-MPD> 9000052-mpd-list-processor-info
-<send-MPD> 9000053-stack-info-frame
-<send-MPD> 9000054-data-disassemble -s $pc -e "$pc+64" -- 0
+<send-MPD> 9000052-stack-info-frame
+<send-MPD> 9000053-data-disassemble -s $pc -e "$pc+4" -- 0
+<recv-MPD> 9000049^done,files=[]
 <recv-MPD> (mpd) 
-<recv-MPD> 9000049^done,files=[{file="app3.c",fullname="/home/nicooo/Documentos/Mestrado/SCHIP/OVP/het-ovp-dbg/application/app3.c"},{file="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/lock.h",fullname="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/lock.h"},{file="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/_types.h",fullname="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/_types.h"},{file="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/lib/gcc/riscv-none-embed/8.1.0/include/stddef.h",fullname="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/lib/gcc/riscv-none-embed/8.1.0/include/stddef.h"},{file="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/reent.h",fullname="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/reent.h"}]
+<recv-MPD> 9000050^done,BreakpointTable={body=[bkpt={number="1",type="hw watchpoint",enabled="y",times="1",ignore="0",disp="keep",processor="BuggyRiscv/P1",thread-groups=["2"],addr="0x80",addrh="0x83",what="buffer[0]",original-location="buffer[0]"}]}
 <recv-MPD> (mpd) 
-<recv-MPD> 9000050^done,BreakpointTable={body=[]}
+<recv-MPD> 9000051^done,mpd-context-info={processor="BuggyRiscv/P0",time="0.001"}
 <recv-MPD> (mpd) 
-<recv-MPD> 9000051^done,mpd-context-info={processor="hetProcessorShared/P2",time="0"}
+<recv-MPD> 9000052^done,frame={level="0",addr="0x10c8",func="_main"}
 <recv-MPD> (mpd) 
-<recv-MPD> 9000052^done,mpd-list-processor-info=[{name="hetProcessorShared/P2",pse="0",id="3",type="riscv",variant="RV32I",icount="0",mode="Machine",exception="InstructionAddressMisaligned",thread-type="processor",endian="little",addressable-size="1",address-size="4"},{name="hetProcessorShared/P1",pse="0",id="2",type="riscv",variant="RV32I",icount="0",mode="Machine",exception="InstructionAddressMisaligned",thread-type="processor",endian="little",addressable-size="1",address-size="4"},{name="hetProcessorShared/P0",pse="0",id="1",type="or1k",variant="generic",icount="0",mode="SUPERVISOR",exception="RST",thread-type="processor",endian="big",addressable-size="1",address-size="4"}]
+<recv-MPD> 9000053^done,asm_insns=[{inst="l.lwz    r4,0xfffffff8(r2)",address="0x10c8",func-name="_main",offset="236"},{inst="l.sw     0xffffffc0(r2),r4",address="0x10cc",func-name="_main",offset="240"},{inst="l.lwz    r3,0xffffffc0(r2)",address="0x10d0",func-name="_main",offset="244"},{inst="l.addi   r3,r3,0x1",address="0x10d4",func-name="_main",offset="248"},{inst="l.sw     0xffffffbc(r2),r3",address="0x10d8",func-name="_main",offset="252"},{inst="l.lwz    r4,0xffffffbc(r2)",address="0x10dc",func-name="_main",offset="256"},{inst="l.sw     0xfffffff8(r2),r4",address="0x10e0",func-name="_main",offset="260"},{inst="l.j      0x0000104c",address="0x10e4",func-name="_main",offset="264"},{inst="l.nop    0x0",address="0x10e8",func-name="_main",offset="268"},{inst="l.addi   r3,r0,0x0",address="0x10ec",func-name="_main",offset="272"},{inst="l.sw     0xfffffff8(r2),r3",address="0x10f0",func-name="_main",offset="276"},{inst="l.lwz    r4,0xfffffff8(r2)",address="0x10f4",func-name="_main",offset="280"},{inst="l.sw     0xffffffb8(r2),r4",address="0x10f8",func-name="_main",offset="284"},{inst="l.lwz    r3,0xffffffb8(r2)",address="0x10fc",func-name="_main",offset="288"},{inst="l.sfgtui r3,0xf",address="0x1100",func-name="_main",offset="292"},{inst="l.bf     0x000011dc",address="0x1104",func-name="_main",offset="296"},{inst="l.nop    0x0",address="0x1108",func-name="_main",offset="300"},{inst="l.lwz    r4,0xfffffff8(r2)",address="0x110c",func-name="_main",offset="304"},{inst="l.sw     0xffffffb4(r2),r4",address="0x1110",func-name="_main",offset="308"},{inst="l.lwz    r3,0xffffffb4(r2)",address="0x1114",func-name="_main",offset="312"}]
 <recv-MPD> (mpd) 
-<recv-MPD> 9000053^done,frame={level="0",addr="0x000100c8",func="_start",arch="riscv:rv32"}
+<send-MPD> 9000054-break-list
+<send-MPD> 9000055-mpd-context-info
+<send-MPD> 9000056-stack-info-frame
+<send-MPD> 9000057-data-list-register-names
+<send-MPD> 9000058-data-list-register-values r
+<send-MPD> 9000059-data-list-changed-registers
+<send-MPD> 9000060-data-disassemble -s $pc -e "$pc+4" -- 0
+<recv-MPD> 9000054^done,BreakpointTable={body=[bkpt={number="1",type="hw watchpoint",enabled="y",times="1",ignore="0",disp="keep",processor="BuggyRiscv/P1",thread-groups=["2"],addr="0x80",addrh="0x83",what="buffer[0]",original-location="buffer[0]"}]}
 <recv-MPD> (mpd) 
-<recv-MPD> 9000054^done,asm_insns=[{address="0x000100c8",func-name="_start",offset="0",inst="auipc\tgp,0x18"},{address="0x000100cc",func-name="_start",offset="4",inst="addi\tgp,gp,1204 # 0x2857c"},{address="0x000100d0",func-name="_start",offset="8",inst="addi\ta0,gp,-2024"},{address="0x000100d4",func-name="_start",offset="12",inst="addi\ta2,gp,-1896"},{address="0x000100d8",func-name="_start",offset="16",inst="sub\ta2,a2,a0"},{address="0x000100dc",func-name="_start",offset="20",inst="li\ta1,0"},{address="0x000100e0",func-name="_start",offset="24",inst="jal\tra,0x10484 <memset>"},{address="0x000100e4",func-name="_start",offset="28",inst="auipc\ta0,0x0"},{address="0x000100e8",func-name="_start",offset="32",inst="addi\ta0,a0,680 # 0x1038c <__libc_fini_array>"},{address="0x000100ec",func-name="_start",offset="36",inst="jal\tra,0x10378 <atexit>"},{address="0x000100f0",func-name="_start",offset="40",inst="jal\tra,0x103ec <__libc_init_array>"},{address="0x000100f4",func-name="_start",offset="44",inst="lw\ta0,0(sp)"},{address="0x000100f8",func-name="_start",offset="48",inst="addi\ta1,sp,4"},{address="0x000100fc",func-name="_start",offset="52",inst="li\ta2,0"},{address="0x00010100",func-name="_start",offset="56",inst="jal\tra,0x10260 <main>"},{address="0x00010104",func-name="_start",offset="60",inst="j\t0x10074 <exit>"}]
+<recv-MPD> 9000055^done,mpd-context-info={processor="BuggyRiscv/P0",time="0.001"}
 <recv-MPD> (mpd) 
-<send-MPD> 1000008-mpd-select-processor hetProcessorShared/P0
-<recv-MPD> 1000008^done,new-thread-id="1",group-id="1"
-<send-MPD> 9000055-file-list-exec-source-files
-<send-MPD> 9000056-break-list
-<send-MPD> 9000057-mpd-context-info
-<send-MPD> 9000058-mpd-list-processor-info
-<send-MPD> 9000059-stack-info-frame
-<send-MPD> 9000060-data-disassemble -s $pc -e "$pc+64" -- 0
+<recv-MPD> 9000056^done,frame={level="0",addr="0x10c8",func="_main"}
 <recv-MPD> (mpd) 
-<recv-MPD> 9000055^done,files=[]
+<recv-MPD> 9000057^done,register-names=["R0","R1","R2","R3","R4","R5","R6","R7","R8","R9","R10","R11","R12","R13","R14","R15","R16","R17","R18","R19","R20","R21","R22","R23","R24","R25","R26","R27","R28","R29","R30","R31","PC","SR","EPCR","EEAR","ESR","PICMR","PICSR","TTCR","TTMR","EXCPT"]
 <recv-MPD> (mpd) 
-<recv-MPD> 9000056^done,BreakpointTable={body=[]}
+<recv-MPD> 9000058^done,register-values=[{number="0",value="0x0"},{number="1",value="0xffffff5c"},{number="2",value="0xffffffec"},{number="3",value="0x38"},{number="4",value="0x80"},{number="5",value="0x0"},{number="6",value="0x0"},{number="7",value="0x889"},{number="8",value="0x0"},{number="9",value="0x1038"},{number="10",value="0x0"},{number="11",value="0x37"},{number="12",value="0x0"},{number="13",value="0x0"},{number="14",value="0x0"},{number="15",value="0x0"},{number="16",value="0x0"},{number="17",value="0x0"},{number="18",value="0x0"},{number="19",value="0x0"},{number="20",value="0x0"},{number="21",value="0x0"},{number="22",value="0x0"},{number="23",value="0x0"},{number="24",value="0x0"},{number="25",value="0x0"},{number="26",value="0x0"},{number="27",value="0x0"},{number="28",value="0x0"},{number="29",value="0x0"},{number="30",value="0x0"},{number="31",value="0x0"},{number="32",value="0x10c8"},{number="33",value="0x8001"},{number="34",value="0xdeadbeef"},{number="35",value="0xdeadbeef"},{number="36",value="0xdeadbeef"},{number="37",value="0x0"},{number="38",value="0x0"},{number="39",value="0x0"},{number="40",value="0x0"},{number="41",value="0x0"}]
 <recv-MPD> (mpd) 
-<recv-MPD> 9000057^done,mpd-context-info={processor="hetProcessorShared/P0",time="0"}
+<recv-MPD> 9000059^done,changed-registers=["1","2","3","4","7","9","11","64","65","66","67"]
 <recv-MPD> (mpd) 
-<recv-MPD> 9000058^done,mpd-list-processor-info=[{name="hetProcessorShared/P2",pse="0",id="3",type="riscv",variant="RV32I",icount="0",mode="Machine",exception="InstructionAddressMisaligned",thread-type="processor",endian="little",addressable-size="1",address-size="4"},{name="hetProcessorShared/P1",pse="0",id="2",type="riscv",variant="RV32I",icount="0",mode="Machine",exception="InstructionAddressMisaligned",thread-type="processor",endian="little",addressable-size="1",address-size="4"},{name="hetProcessorShared/P0",pse="0",id="1",type="or1k",variant="generic",icount="0",mode="SUPERVISOR",exception="RST",thread-type="processor",endian="big",addressable-size="1",address-size="4"}]
+<recv-MPD> 9000060^done,asm_insns=[{inst="l.lwz    r4,0xfffffff8(r2)",address="0x10c8",func-name="_main",offset="236"},{inst="l.sw     0xffffffc0(r2),r4",address="0x10cc",func-name="_main",offset="240"},{inst="l.lwz    r3,0xffffffc0(r2)",address="0x10d0",func-name="_main",offset="244"},{inst="l.addi   r3,r3,0x1",address="0x10d4",func-name="_main",offset="248"},{inst="l.sw     0xffffffbc(r2),r3",address="0x10d8",func-name="_main",offset="252"},{inst="l.lwz    r4,0xffffffbc(r2)",address="0x10dc",func-name="_main",offset="256"},{inst="l.sw     0xfffffff8(r2),r4",address="0x10e0",func-name="_main",offset="260"},{inst="l.j      0x0000104c",address="0x10e4",func-name="_main",offset="264"},{inst="l.nop    0x0",address="0x10e8",func-name="_main",offset="268"},{inst="l.addi   r3,r0,0x0",address="0x10ec",func-name="_main",offset="272"},{inst="l.sw     0xfffffff8(r2),r3",address="0x10f0",func-name="_main",offset="276"},{inst="l.lwz    r4,0xfffffff8(r2)",address="0x10f4",func-name="_main",offset="280"},{inst="l.sw     0xffffffb8(r2),r4",address="0x10f8",func-name="_main",offset="284"},{inst="l.lwz    r3,0xffffffb8(r2)",address="0x10fc",func-name="_main",offset="288"},{inst="l.sfgtui r3,0xf",address="0x1100",func-name="_main",offset="292"},{inst="l.bf     0x000011dc",address="0x1104",func-name="_main",offset="296"},{inst="l.nop    0x0",address="0x1108",func-name="_main",offset="300"},{inst="l.lwz    r4,0xfffffff8(r2)",address="0x110c",func-name="_main",offset="304"},{inst="l.sw     0xffffffb4(r2),r4",address="0x1110",func-name="_main",offset="308"},{inst="l.lwz    r3,0xffffffb4(r2)",address="0x1114",func-name="_main",offset="312"}]
 <recv-MPD> (mpd) 
-<recv-MPD> 9000059^done,frame={level="0",addr="0x100",func="start"}
+<send-MPD> 9000061-break-list
+<send-MPD> 9000062-mpd-context-info
+<send-MPD> 9000063-stack-info-frame
+<send-MPD> 9000064-stack-list-frames 0 100
+<send-MPD> 9000065-data-disassemble -s $pc -e "$pc+4" -- 0
+<recv-MPD> 9000061^done,BreakpointTable={body=[bkpt={number="1",type="hw watchpoint",enabled="y",times="1",ignore="0",disp="keep",processor="BuggyRiscv/P1",thread-groups=["2"],addr="0x80",addrh="0x83",what="buffer[0]",original-location="buffer[0]"}]}
 <recv-MPD> (mpd) 
-<recv-MPD> 9000060^done,asm_insns=[{inst="l.addi   r2,r0,0x0",address="0x100",func-name="start",offset="0"},{inst="l.addi   r3,r0,0x0",address="0x104",func-name="start",offset="4"},{inst="l.addi   r4,r0,0x0",address="0x108",func-name="start",offset="8"},{inst="l.addi   r5,r0,0x0",address="0x10c",func-name="start",offset="12"},{inst="l.addi   r6,r0,0x0",address="0x110",func-name="start",offset="16"},{inst="l.addi   r7,r0,0x0",address="0x114",func-name="start",offset="20"},{inst="l.addi   r8,r0,0x0",address="0x118",func-name="start",offset="24"},{inst="l.addi   r9,r0,0x0",address="0x11c",func-name="start",offset="28"},{inst="l.addi   r10,r0,0x0",address="0x120",func-name="start",offset="32"},{inst="l.addi   r11,r0,0x0",address="0x124",func-name="start",offset="36"},{inst="l.addi   r12,r0,0x0",address="0x128",func-name="start",offset="40"},{inst="l.addi   r13,r0,0x0",address="0x12c",func-name="start",offset="44"},{inst="l.addi   r14,r0,0x0",address="0x130",func-name="start",offset="48"},{inst="l.addi   r15,r0,0x0",address="0x134",func-name="start",offset="52"},{inst="l.addi   r16,r0,0x0",address="0x138",func-name="start",offset="56"},{inst="l.addi   r17,r0,0x0",address="0x13c",func-name="start",offset="60"},{inst="l.addi   r18,r0,0x0",address="0x140",func-name="start",offset="64"},{inst="l.addi   r19,r0,0x0",address="0x144",func-name="start",offset="68"},{inst="l.addi   r20,r0,0x0",address="0x148",func-name="start",offset="72"},{inst="l.addi   r21,r0,0x0",address="0x14c",func-name="start",offset="76"}]
+<recv-MPD> 9000062^done,mpd-context-info={processor="BuggyRiscv/P0",time="0.001"}
 <recv-MPD> (mpd) 
-<send-MPD> 1000009-mpd-select-processor hetProcessorShared/P1
-<recv-MPD> 1000009^done,new-thread-id="2",group-id="2"
-<send-MPD> 9000061-file-list-exec-source-files
-<send-MPD> 9000062-break-list
-<send-MPD> 9000063-mpd-context-info
-<send-MPD> 9000064-mpd-list-processor-info
-<send-MPD> 9000065-stack-info-frame
-<send-MPD> 9000066-data-disassemble -s $pc -e "$pc+64" -- 0
+<recv-MPD> 9000063^done,frame={level="0",addr="0x10c8",func="_main"}
 <recv-MPD> (mpd) 
-<recv-MPD> 9000061^done,files=[{file="app2.c",fullname="/home/nicooo/Documentos/Mestrado/SCHIP/OVP/het-ovp-dbg/application/app2.c"},{file="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/lock.h",fullname="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/lock.h"},{file="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/_types.h",fullname="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/_types.h"},{file="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/lib/gcc/riscv-none-embed/8.1.0/include/stddef.h",fullname="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/lib/gcc/riscv-none-embed/8.1.0/include/stddef.h"},{file="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/reent.h",fullname="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/reent.h"}]
+<recv-MPD> 9000064^done,stack=[frame={level="0",addr="0x10c8",func="_main"},frame={level="1",addr="0x1038",func="_main"}]
 <recv-MPD> (mpd) 
-<recv-MPD> 9000062^done,BreakpointTable={body=[]}
+<recv-MPD> 9000065^done,asm_insns=[{inst="l.lwz    r4,0xfffffff8(r2)",address="0x10c8",func-name="_main",offset="236"},{inst="l.sw     0xffffffc0(r2),r4",address="0x10cc",func-name="_main",offset="240"},{inst="l.lwz    r3,0xffffffc0(r2)",address="0x10d0",func-name="_main",offset="244"},{inst="l.addi   r3,r3,0x1",address="0x10d4",func-name="_main",offset="248"},{inst="l.sw     0xffffffbc(r2),r3",address="0x10d8",func-name="_main",offset="252"},{inst="l.lwz    r4,0xffffffbc(r2)",address="0x10dc",func-name="_main",offset="256"},{inst="l.sw     0xfffffff8(r2),r4",address="0x10e0",func-name="_main",offset="260"},{inst="l.j      0x0000104c",address="0x10e4",func-name="_main",offset="264"},{inst="l.nop    0x0",address="0x10e8",func-name="_main",offset="268"},{inst="l.addi   r3,r0,0x0",address="0x10ec",func-name="_main",offset="272"},{inst="l.sw     0xfffffff8(r2),r3",address="0x10f0",func-name="_main",offset="276"},{inst="l.lwz    r4,0xfffffff8(r2)",address="0x10f4",func-name="_main",offset="280"},{inst="l.sw     0xffffffb8(r2),r4",address="0x10f8",func-name="_main",offset="284"},{inst="l.lwz    r3,0xffffffb8(r2)",address="0x10fc",func-name="_main",offset="288"},{inst="l.sfgtui r3,0xf",address="0x1100",func-name="_main",offset="292"},{inst="l.bf     0x000011dc",address="0x1104",func-name="_main",offset="296"},{inst="l.nop    0x0",address="0x1108",func-name="_main",offset="300"},{inst="l.lwz    r4,0xfffffff8(r2)",address="0x110c",func-name="_main",offset="304"},{inst="l.sw     0xffffffb4(r2),r4",address="0x1110",func-name="_main",offset="308"},{inst="l.lwz    r3,0xffffffb4(r2)",address="0x1114",func-name="_main",offset="312"}]
 <recv-MPD> (mpd) 
-<recv-MPD> 9000063^done,mpd-context-info={processor="hetProcessorShared/P1",time="0"}
+<send-MPD> 1000003-stack-select-frame 0
+<recv-MPD> 1000003^done
+<send-MPD> 9000066-break-list
+<send-MPD> 9000067-mpd-context-info
+<send-MPD> 9000068-stack-info-frame
+<send-MPD> 9000069-stack-list-frames 0 100
+<send-MPD> 9000070-data-disassemble -s $pc -e "$pc+4" -- 0
 <recv-MPD> (mpd) 
-<recv-MPD> 9000064^done,mpd-list-processor-info=[{name="hetProcessorShared/P2",pse="0",id="3",type="riscv",variant="RV32I",icount="0",mode="Machine",exception="InstructionAddressMisaligned",thread-type="processor",endian="little",addressable-size="1",address-size="4"},{name="hetProcessorShared/P1",pse="0",id="2",type="riscv",variant="RV32I",icount="0",mode="Machine",exception="InstructionAddressMisaligned",thread-type="processor",endian="little",addressable-size="1",address-size="4"},{name="hetProcessorShared/P0",pse="0",id="1",type="or1k",variant="generic",icount="0",mode="SUPERVISOR",exception="RST",thread-type="processor",endian="big",addressable-size="1",address-size="4"}]
+<recv-MPD> 9000066^done,BreakpointTable={body=[bkpt={number="1",type="hw watchpoint",enabled="y",times="1",ignore="0",disp="keep",processor="BuggyRiscv/P1",thread-groups=["2"],addr="0x80",addrh="0x83",what="buffer[0]",original-location="buffer[0]"}]}
 <recv-MPD> (mpd) 
-<recv-MPD> 9000065^done,frame={level="0",addr="0x000100c8",func="_start",arch="riscv:rv32"}
+<recv-MPD> 9000067^done,mpd-context-info={processor="BuggyRiscv/P0",time="0.001"}
 <recv-MPD> (mpd) 
-<recv-MPD> 9000066^done,asm_insns=[{address="0x000100c8",func-name="_start",offset="0",inst="auipc\tgp,0x18"},{address="0x000100cc",func-name="_start",offset="4",inst="addi\tgp,gp,1204 # 0x2857c"},{address="0x000100d0",func-name="_start",offset="8",inst="addi\ta0,gp,-2024"},{address="0x000100d4",func-name="_start",offset="12",inst="addi\ta2,gp,-1896"},{address="0x000100d8",func-name="_start",offset="16",inst="sub\ta2,a2,a0"},{address="0x000100dc",func-name="_start",offset="20",inst="li\ta1,0"},{address="0x000100e0",func-name="_start",offset="24",inst="jal\tra,0x10484 <memset>"},{address="0x000100e4",func-name="_start",offset="28",inst="auipc\ta0,0x0"},{address="0x000100e8",func-name="_start",offset="32",inst="addi\ta0,a0,680 # 0x1038c <__libc_fini_array>"},{address="0x000100ec",func-name="_start",offset="36",inst="jal\tra,0x10378 <atexit>"},{address="0x000100f0",func-name="_start",offset="40",inst="jal\tra,0x103ec <__libc_init_array>"},{address="0x000100f4",func-name="_start",offset="44",inst="lw\ta0,0(sp)"},{address="0x000100f8",func-name="_start",offset="48",inst="addi\ta1,sp,4"},{address="0x000100fc",func-name="_start",offset="52",inst="li\ta2,0"},{address="0x00010100",func-name="_start",offset="56",inst="jal\tra,0x10260 <main>"},{address="0x00010104",func-name="_start",offset="60",inst="j\t0x10074 <exit>"}]
+<recv-MPD> 9000068^done,frame={level="0",addr="0x10c8",func="_main"}
 <recv-MPD> (mpd) 
-<send-MPD> 1000010-mpd-select-processor hetProcessorShared/P0
-<recv-MPD> 1000010^done,new-thread-id="1",group-id="1"
-<send-MPD> 9000067-file-list-exec-source-files
-<send-MPD> 9000068-break-list
-<send-MPD> 9000069-mpd-context-info
-<send-MPD> 9000070-mpd-list-processor-info
-<send-MPD> 9000071-stack-info-frame
-<send-MPD> 9000072-data-disassemble -s $pc -e "$pc+64" -- 0
+<recv-MPD> 9000069^done,stack=[frame={level="0",addr="0x10c8",func="_main"},frame={level="1",addr="0x1038",func="_main"}]
 <recv-MPD> (mpd) 
-<recv-MPD> 9000067^done,files=[]
+<recv-MPD> 9000070^done,asm_insns=[{inst="l.lwz    r4,0xfffffff8(r2)",address="0x10c8",func-name="_main",offset="236"},{inst="l.sw     0xffffffc0(r2),r4",address="0x10cc",func-name="_main",offset="240"},{inst="l.lwz    r3,0xffffffc0(r2)",address="0x10d0",func-name="_main",offset="244"},{inst="l.addi   r3,r3,0x1",address="0x10d4",func-name="_main",offset="248"},{inst="l.sw     0xffffffbc(r2),r3",address="0x10d8",func-name="_main",offset="252"},{inst="l.lwz    r4,0xffffffbc(r2)",address="0x10dc",func-name="_main",offset="256"},{inst="l.sw     0xfffffff8(r2),r4",address="0x10e0",func-name="_main",offset="260"},{inst="l.j      0x0000104c",address="0x10e4",func-name="_main",offset="264"},{inst="l.nop    0x0",address="0x10e8",func-name="_main",offset="268"},{inst="l.addi   r3,r0,0x0",address="0x10ec",func-name="_main",offset="272"},{inst="l.sw     0xfffffff8(r2),r3",address="0x10f0",func-name="_main",offset="276"},{inst="l.lwz    r4,0xfffffff8(r2)",address="0x10f4",func-name="_main",offset="280"},{inst="l.sw     0xffffffb8(r2),r4",address="0x10f8",func-name="_main",offset="284"},{inst="l.lwz    r3,0xffffffb8(r2)",address="0x10fc",func-name="_main",offset="288"},{inst="l.sfgtui r3,0xf",address="0x1100",func-name="_main",offset="292"},{inst="l.bf     0x000011dc",address="0x1104",func-name="_main",offset="296"},{inst="l.nop    0x0",address="0x1108",func-name="_main",offset="300"},{inst="l.lwz    r4,0xfffffff8(r2)",address="0x110c",func-name="_main",offset="304"},{inst="l.sw     0xffffffb4(r2),r4",address="0x1110",func-name="_main",offset="308"},{inst="l.lwz    r3,0xffffffb4(r2)",address="0x1114",func-name="_main",offset="312"}]
 <recv-MPD> (mpd) 
-<recv-MPD> 9000068^done,BreakpointTable={body=[]}
+<send-MPD> 1000004-stack-select-frame 0
+<recv-MPD> 1000004^done
+<send-MPD> 9000071-break-list
+<send-MPD> 9000072-mpd-context-info
+<send-MPD> 9000073-stack-info-frame
+<send-MPD> 9000074-stack-list-frames 0 100
+<send-MPD> 9000075-data-disassemble -s $pc -e "$pc+4" -- 0
 <recv-MPD> (mpd) 
-<recv-MPD> 9000069^done,mpd-context-info={processor="hetProcessorShared/P0",time="0"}
+<recv-MPD> 9000071^done,BreakpointTable={body=[bkpt={number="1",type="hw watchpoint",enabled="y",times="1",ignore="0",disp="keep",processor="BuggyRiscv/P1",thread-groups=["2"],addr="0x80",addrh="0x83",what="buffer[0]",original-location="buffer[0]"}]}
 <recv-MPD> (mpd) 
-<recv-MPD> 9000070^done,mpd-list-processor-info=[{name="hetProcessorShared/P2",pse="0",id="3",type="riscv",variant="RV32I",icount="0",mode="Machine",exception="InstructionAddressMisaligned",thread-type="processor",endian="little",addressable-size="1",address-size="4"},{name="hetProcessorShared/P1",pse="0",id="2",type="riscv",variant="RV32I",icount="0",mode="Machine",exception="InstructionAddressMisaligned",thread-type="processor",endian="little",addressable-size="1",address-size="4"},{name="hetProcessorShared/P0",pse="0",id="1",type="or1k",variant="generic",icount="0",mode="SUPERVISOR",exception="RST",thread-type="processor",endian="big",addressable-size="1",address-size="4"}]
+<recv-MPD> 9000072^done,mpd-context-info={processor="BuggyRiscv/P0",time="0.001"}
 <recv-MPD> (mpd) 
-<recv-MPD> 9000071^done,frame={level="0",addr="0x100",func="start"}
+<recv-MPD> 9000073^done,frame={level="0",addr="0x10c8",func="_main"}
 <recv-MPD> (mpd) 
-<recv-MPD> 9000072^done,asm_insns=[{inst="l.addi   r2,r0,0x0",address="0x100",func-name="start",offset="0"},{inst="l.addi   r3,r0,0x0",address="0x104",func-name="start",offset="4"},{inst="l.addi   r4,r0,0x0",address="0x108",func-name="start",offset="8"},{inst="l.addi   r5,r0,0x0",address="0x10c",func-name="start",offset="12"},{inst="l.addi   r6,r0,0x0",address="0x110",func-name="start",offset="16"},{inst="l.addi   r7,r0,0x0",address="0x114",func-name="start",offset="20"},{inst="l.addi   r8,r0,0x0",address="0x118",func-name="start",offset="24"},{inst="l.addi   r9,r0,0x0",address="0x11c",func-name="start",offset="28"},{inst="l.addi   r10,r0,0x0",address="0x120",func-name="start",offset="32"},{inst="l.addi   r11,r0,0x0",address="0x124",func-name="start",offset="36"},{inst="l.addi   r12,r0,0x0",address="0x128",func-name="start",offset="40"},{inst="l.addi   r13,r0,0x0",address="0x12c",func-name="start",offset="44"},{inst="l.addi   r14,r0,0x0",address="0x130",func-name="start",offset="48"},{inst="l.addi   r15,r0,0x0",address="0x134",func-name="start",offset="52"},{inst="l.addi   r16,r0,0x0",address="0x138",func-name="start",offset="56"},{inst="l.addi   r17,r0,0x0",address="0x13c",func-name="start",offset="60"},{inst="l.addi   r18,r0,0x0",address="0x140",func-name="start",offset="64"},{inst="l.addi   r19,r0,0x0",address="0x144",func-name="start",offset="68"},{inst="l.addi   r20,r0,0x0",address="0x148",func-name="start",offset="72"},{inst="l.addi   r21,r0,0x0",address="0x14c",func-name="start",offset="76"}]
+<recv-MPD> 9000074^done,stack=[frame={level="0",addr="0x10c8",func="_main"},frame={level="1",addr="0x1038",func="_main"}]
 <recv-MPD> (mpd) 
-<send-MPD> 1000011-mpd-select-processor hetProcessorShared/P1
-<recv-MPD> 1000011^done,new-thread-id="2",group-id="2"
-<send-MPD> 9000073-file-list-exec-source-files
-<send-MPD> 9000074-break-list
-<send-MPD> 9000075-mpd-context-info
-<send-MPD> 9000076-mpd-list-processor-info
-<send-MPD> 9000077-stack-info-frame
-<send-MPD> 9000078-data-disassemble -s $pc -e "$pc+64" -- 0
+<recv-MPD> 9000075^done,asm_insns=[{inst="l.lwz    r4,0xfffffff8(r2)",address="0x10c8",func-name="_main",offset="236"},{inst="l.sw     0xffffffc0(r2),r4",address="0x10cc",func-name="_main",offset="240"},{inst="l.lwz    r3,0xffffffc0(r2)",address="0x10d0",func-name="_main",offset="244"},{inst="l.addi   r3,r3,0x1",address="0x10d4",func-name="_main",offset="248"},{inst="l.sw     0xffffffbc(r2),r3",address="0x10d8",func-name="_main",offset="252"},{inst="l.lwz    r4,0xffffffbc(r2)",address="0x10dc",func-name="_main",offset="256"},{inst="l.sw     0xfffffff8(r2),r4",address="0x10e0",func-name="_main",offset="260"},{inst="l.j      0x0000104c",address="0x10e4",func-name="_main",offset="264"},{inst="l.nop    0x0",address="0x10e8",func-name="_main",offset="268"},{inst="l.addi   r3,r0,0x0",address="0x10ec",func-name="_main",offset="272"},{inst="l.sw     0xfffffff8(r2),r3",address="0x10f0",func-name="_main",offset="276"},{inst="l.lwz    r4,0xfffffff8(r2)",address="0x10f4",func-name="_main",offset="280"},{inst="l.sw     0xffffffb8(r2),r4",address="0x10f8",func-name="_main",offset="284"},{inst="l.lwz    r3,0xffffffb8(r2)",address="0x10fc",func-name="_main",offset="288"},{inst="l.sfgtui r3,0xf",address="0x1100",func-name="_main",offset="292"},{inst="l.bf     0x000011dc",address="0x1104",func-name="_main",offset="296"},{inst="l.nop    0x0",address="0x1108",func-name="_main",offset="300"},{inst="l.lwz    r4,0xfffffff8(r2)",address="0x110c",func-name="_main",offset="304"},{inst="l.sw     0xffffffb4(r2),r4",address="0x1110",func-name="_main",offset="308"},{inst="l.lwz    r3,0xffffffb4(r2)",address="0x1114",func-name="_main",offset="312"}]
 <recv-MPD> (mpd) 
-<recv-MPD> 9000073^done,files=[{file="app2.c",fullname="/home/nicooo/Documentos/Mestrado/SCHIP/OVP/het-ovp-dbg/application/app2.c"},{file="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/lock.h",fullname="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/lock.h"},{file="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/_types.h",fullname="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/_types.h"},{file="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/lib/gcc/riscv-none-embed/8.1.0/include/stddef.h",fullname="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/lib/gcc/riscv-none-embed/8.1.0/include/stddef.h"},{file="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/reent.h",fullname="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/reent.h"}]
+<send-MPD> 1000005-stack-select-frame 1
+<recv-MPD> 1000005^done
+<send-MPD> 9000076-break-list
+<send-MPD> 9000077-mpd-context-info
+<send-MPD> 9000078-stack-info-frame
+<send-MPD> 9000079-stack-list-frames 0 100
+<send-MPD> 9000080-data-disassemble -s $pc -e "$pc+4" -- 0
 <recv-MPD> (mpd) 
-<recv-MPD> 9000074^done,BreakpointTable={body=[]}
+<recv-MPD> 9000076^done,BreakpointTable={body=[bkpt={number="1",type="hw watchpoint",enabled="y",times="1",ignore="0",disp="keep",processor="BuggyRiscv/P1",thread-groups=["2"],addr="0x80",addrh="0x83",what="buffer[0]",original-location="buffer[0]"}]}
 <recv-MPD> (mpd) 
-<recv-MPD> 9000075^done,mpd-context-info={processor="hetProcessorShared/P1",time="0"}
+<recv-MPD> 9000077^done,mpd-context-info={processor="BuggyRiscv/P0",time="0.001"}
 <recv-MPD> (mpd) 
-<recv-MPD> 9000076^done,mpd-list-processor-info=[{name="hetProcessorShared/P2",pse="0",id="3",type="riscv",variant="RV32I",icount="0",mode="Machine",exception="InstructionAddressMisaligned",thread-type="processor",endian="little",addressable-size="1",address-size="4"},{name="hetProcessorShared/P1",pse="0",id="2",type="riscv",variant="RV32I",icount="0",mode="Machine",exception="InstructionAddressMisaligned",thread-type="processor",endian="little",addressable-size="1",address-size="4"},{name="hetProcessorShared/P0",pse="0",id="1",type="or1k",variant="generic",icount="0",mode="SUPERVISOR",exception="RST",thread-type="processor",endian="big",addressable-size="1",address-size="4"}]
+<recv-MPD> 9000078^done,frame={level="0",addr="0x10c8",func="_main"}
 <recv-MPD> (mpd) 
-<recv-MPD> 9000077^done,frame={level="0",addr="0x000100c8",func="_start",arch="riscv:rv32"}
+<recv-MPD> 9000079^done,stack=[frame={level="0",addr="0x10c8",func="_main"},frame={level="1",addr="0x1038",func="_main"}]
 <recv-MPD> (mpd) 
-<recv-MPD> 9000078^done,asm_insns=[{address="0x000100c8",func-name="_start",offset="0",inst="auipc\tgp,0x18"},{address="0x000100cc",func-name="_start",offset="4",inst="addi\tgp,gp,1204 # 0x2857c"},{address="0x000100d0",func-name="_start",offset="8",inst="addi\ta0,gp,-2024"},{address="0x000100d4",func-name="_start",offset="12",inst="addi\ta2,gp,-1896"},{address="0x000100d8",func-name="_start",offset="16",inst="sub\ta2,a2,a0"},{address="0x000100dc",func-name="_start",offset="20",inst="li\ta1,0"},{address="0x000100e0",func-name="_start",offset="24",inst="jal\tra,0x10484 <memset>"},{address="0x000100e4",func-name="_start",offset="28",inst="auipc\ta0,0x0"},{address="0x000100e8",func-name="_start",offset="32",inst="addi\ta0,a0,680 # 0x1038c <__libc_fini_array>"},{address="0x000100ec",func-name="_start",offset="36",inst="jal\tra,0x10378 <atexit>"},{address="0x000100f0",func-name="_start",offset="40",inst="jal\tra,0x103ec <__libc_init_array>"},{address="0x000100f4",func-name="_start",offset="44",inst="lw\ta0,0(sp)"},{address="0x000100f8",func-name="_start",offset="48",inst="addi\ta1,sp,4"},{address="0x000100fc",func-name="_start",offset="52",inst="li\ta2,0"},{address="0x00010100",func-name="_start",offset="56",inst="jal\tra,0x10260 <main>"},{address="0x00010104",func-name="_start",offset="60",inst="j\t0x10074 <exit>"}]
+<recv-MPD> 9000080^done,asm_insns=[{inst="l.lwz    r4,0xfffffff8(r2)",address="0x10c8",func-name="_main",offset="236"},{inst="l.sw     0xffffffc0(r2),r4",address="0x10cc",func-name="_main",offset="240"},{inst="l.lwz    r3,0xffffffc0(r2)",address="0x10d0",func-name="_main",offset="244"},{inst="l.addi   r3,r3,0x1",address="0x10d4",func-name="_main",offset="248"},{inst="l.sw     0xffffffbc(r2),r3",address="0x10d8",func-name="_main",offset="252"},{inst="l.lwz    r4,0xffffffbc(r2)",address="0x10dc",func-name="_main",offset="256"},{inst="l.sw     0xfffffff8(r2),r4",address="0x10e0",func-name="_main",offset="260"},{inst="l.j      0x0000104c",address="0x10e4",func-name="_main",offset="264"},{inst="l.nop    0x0",address="0x10e8",func-name="_main",offset="268"},{inst="l.addi   r3,r0,0x0",address="0x10ec",func-name="_main",offset="272"},{inst="l.sw     0xfffffff8(r2),r3",address="0x10f0",func-name="_main",offset="276"},{inst="l.lwz    r4,0xfffffff8(r2)",address="0x10f4",func-name="_main",offset="280"},{inst="l.sw     0xffffffb8(r2),r4",address="0x10f8",func-name="_main",offset="284"},{inst="l.lwz    r3,0xffffffb8(r2)",address="0x10fc",func-name="_main",offset="288"},{inst="l.sfgtui r3,0xf",address="0x1100",func-name="_main",offset="292"},{inst="l.bf     0x000011dc",address="0x1104",func-name="_main",offset="296"},{inst="l.nop    0x0",address="0x1108",func-name="_main",offset="300"},{inst="l.lwz    r4,0xfffffff8(r2)",address="0x110c",func-name="_main",offset="304"},{inst="l.sw     0xffffffb4(r2),r4",address="0x1110",func-name="_main",offset="308"},{inst="l.lwz    r3,0xffffffb4(r2)",address="0x1114",func-name="_main",offset="312"}]
 <recv-MPD> (mpd) 
-<send-MPD> 1000012-mpd-select-processor hetProcessorShared/P0
-<recv-MPD> 1000012^done,new-thread-id="1",group-id="1"
-<send-MPD> 9000079-file-list-exec-source-files
-<send-MPD> 9000080-break-list
-<send-MPD> 9000081-mpd-context-info
-<send-MPD> 9000082-mpd-list-processor-info
+<send-MPD> 1000006-stack-select-frame 0
+<recv-MPD> 1000006^done
+<send-MPD> 9000081-break-list
+<send-MPD> 9000082-mpd-context-info
 <send-MPD> 9000083-stack-info-frame
-<send-MPD> 9000084-data-disassemble -s $pc -e "$pc+64" -- 0
+<send-MPD> 9000084-stack-list-frames 0 100
+<send-MPD> 9000085-data-disassemble -s $pc -e "$pc+4" -- 0
 <recv-MPD> (mpd) 
-<recv-MPD> 9000079^done,files=[]
+<recv-MPD> 9000081^done,BreakpointTable={body=[bkpt={number="1",type="hw watchpoint",enabled="y",times="1",ignore="0",disp="keep",processor="BuggyRiscv/P1",thread-groups=["2"],addr="0x80",addrh="0x83",what="buffer[0]",original-location="buffer[0]"}]}
 <recv-MPD> (mpd) 
-<recv-MPD> 9000080^done,BreakpointTable={body=[]}
+<recv-MPD> 9000082^done,mpd-context-info={processor="BuggyRiscv/P0",time="0.001"}
 <recv-MPD> (mpd) 
-<recv-MPD> 9000081^done,mpd-context-info={processor="hetProcessorShared/P0",time="0"}
+<recv-MPD> 9000083^done,frame={level="0",addr="0x10c8",func="_main"}
 <recv-MPD> (mpd) 
-<recv-MPD> 9000082^done,mpd-list-processor-info=[{name="hetProcessorShared/P2",pse="0",id="3",type="riscv",variant="RV32I",icount="0",mode="Machine",exception="InstructionAddressMisaligned",thread-type="processor",endian="little",addressable-size="1",address-size="4"},{name="hetProcessorShared/P1",pse="0",id="2",type="riscv",variant="RV32I",icount="0",mode="Machine",exception="InstructionAddressMisaligned",thread-type="processor",endian="little",addressable-size="1",address-size="4"},{name="hetProcessorShared/P0",pse="0",id="1",type="or1k",variant="generic",icount="0",mode="SUPERVISOR",exception="RST",thread-type="processor",endian="big",addressable-size="1",address-size="4"}]
+<recv-MPD> 9000084^done,stack=[frame={level="0",addr="0x10c8",func="_main"},frame={level="1",addr="0x1038",func="_main"}]
 <recv-MPD> (mpd) 
-<recv-MPD> 9000083^done,frame={level="0",addr="0x100",func="start"}
+<recv-MPD> 9000085^done,asm_insns=[{inst="l.lwz    r4,0xfffffff8(r2)",address="0x10c8",func-name="_main",offset="236"},{inst="l.sw     0xffffffc0(r2),r4",address="0x10cc",func-name="_main",offset="240"},{inst="l.lwz    r3,0xffffffc0(r2)",address="0x10d0",func-name="_main",offset="244"},{inst="l.addi   r3,r3,0x1",address="0x10d4",func-name="_main",offset="248"},{inst="l.sw     0xffffffbc(r2),r3",address="0x10d8",func-name="_main",offset="252"},{inst="l.lwz    r4,0xffffffbc(r2)",address="0x10dc",func-name="_main",offset="256"},{inst="l.sw     0xfffffff8(r2),r4",address="0x10e0",func-name="_main",offset="260"},{inst="l.j      0x0000104c",address="0x10e4",func-name="_main",offset="264"},{inst="l.nop    0x0",address="0x10e8",func-name="_main",offset="268"},{inst="l.addi   r3,r0,0x0",address="0x10ec",func-name="_main",offset="272"},{inst="l.sw     0xfffffff8(r2),r3",address="0x10f0",func-name="_main",offset="276"},{inst="l.lwz    r4,0xfffffff8(r2)",address="0x10f4",func-name="_main",offset="280"},{inst="l.sw     0xffffffb8(r2),r4",address="0x10f8",func-name="_main",offset="284"},{inst="l.lwz    r3,0xffffffb8(r2)",address="0x10fc",func-name="_main",offset="288"},{inst="l.sfgtui r3,0xf",address="0x1100",func-name="_main",offset="292"},{inst="l.bf     0x000011dc",address="0x1104",func-name="_main",offset="296"},{inst="l.nop    0x0",address="0x1108",func-name="_main",offset="300"},{inst="l.lwz    r4,0xfffffff8(r2)",address="0x110c",func-name="_main",offset="304"},{inst="l.sw     0xffffffb4(r2),r4",address="0x1110",func-name="_main",offset="308"},{inst="l.lwz    r3,0xffffffb4(r2)",address="0x1114",func-name="_main",offset="312"}]
 <recv-MPD> (mpd) 
-<recv-MPD> 9000084^done,asm_insns=[{inst="l.addi   r2,r0,0x0",address="0x100",func-name="start",offset="0"},{inst="l.addi   r3,r0,0x0",address="0x104",func-name="start",offset="4"},{inst="l.addi   r4,r0,0x0",address="0x108",func-name="start",offset="8"},{inst="l.addi   r5,r0,0x0",address="0x10c",func-name="start",offset="12"},{inst="l.addi   r6,r0,0x0",address="0x110",func-name="start",offset="16"},{inst="l.addi   r7,r0,0x0",address="0x114",func-name="start",offset="20"},{inst="l.addi   r8,r0,0x0",address="0x118",func-name="start",offset="24"},{inst="l.addi   r9,r0,0x0",address="0x11c",func-name="start",offset="28"},{inst="l.addi   r10,r0,0x0",address="0x120",func-name="start",offset="32"},{inst="l.addi   r11,r0,0x0",address="0x124",func-name="start",offset="36"},{inst="l.addi   r12,r0,0x0",address="0x128",func-name="start",offset="40"},{inst="l.addi   r13,r0,0x0",address="0x12c",func-name="start",offset="44"},{inst="l.addi   r14,r0,0x0",address="0x130",func-name="start",offset="48"},{inst="l.addi   r15,r0,0x0",address="0x134",func-name="start",offset="52"},{inst="l.addi   r16,r0,0x0",address="0x138",func-name="start",offset="56"},{inst="l.addi   r17,r0,0x0",address="0x13c",func-name="start",offset="60"},{inst="l.addi   r18,r0,0x0",address="0x140",func-name="start",offset="64"},{inst="l.addi   r19,r0,0x0",address="0x144",func-name="start",offset="68"},{inst="l.addi   r20,r0,0x0",address="0x148",func-name="start",offset="72"},{inst="l.addi   r21,r0,0x0",address="0x14c",func-name="start",offset="76"}]
-<recv-MPD> (mpd) 
-<send-MPD> 1000013-mpd-select-processor hetProcessorShared/P1
-<recv-MPD> 1000013^done,new-thread-id="2",group-id="2"
-<send-MPD> 9000085-file-list-exec-source-files
+<send-MPD> 1000007-stack-select-frame 1
+<recv-MPD> 1000007^done
 <send-MPD> 9000086-break-list
 <send-MPD> 9000087-mpd-context-info
-<send-MPD> 9000088-mpd-list-processor-info
-<send-MPD> 9000089-stack-info-frame
-<send-MPD> 9000090-data-disassemble -s $pc -e "$pc+64" -- 0
+<send-MPD> 9000088-stack-info-frame
+<send-MPD> 9000089-stack-list-frames 0 100
+<send-MPD> 9000090-data-disassemble -s $pc -e "$pc+4" -- 0
 <recv-MPD> (mpd) 
-<recv-MPD> 9000085^done,files=[{file="app2.c",fullname="/home/nicooo/Documentos/Mestrado/SCHIP/OVP/het-ovp-dbg/application/app2.c"},{file="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/lock.h",fullname="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/lock.h"},{file="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/_types.h",fullname="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/_types.h"},{file="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/lib/gcc/riscv-none-embed/8.1.0/include/stddef.h",fullname="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/lib/gcc/riscv-none-embed/8.1.0/include/stddef.h"},{file="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/reent.h",fullname="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/reent.h"}]
+<recv-MPD> 9000086^done,BreakpointTable={body=[bkpt={number="1",type="hw watchpoint",enabled="y",times="1",ignore="0",disp="keep",processor="BuggyRiscv/P1",thread-groups=["2"],addr="0x80",addrh="0x83",what="buffer[0]",original-location="buffer[0]"}]}
 <recv-MPD> (mpd) 
-<recv-MPD> 9000086^done,BreakpointTable={body=[]}
+<recv-MPD> 9000087^done,mpd-context-info={processor="BuggyRiscv/P0",time="0.001"}
 <recv-MPD> (mpd) 
-<recv-MPD> 9000087^done,mpd-context-info={processor="hetProcessorShared/P1",time="0"}
+<recv-MPD> 9000088^done,frame={level="0",addr="0x10c8",func="_main"}
 <recv-MPD> (mpd) 
-<recv-MPD> 9000088^done,mpd-list-processor-info=[{name="hetProcessorShared/P2",pse="0",id="3",type="riscv",variant="RV32I",icount="0",mode="Machine",exception="InstructionAddressMisaligned",thread-type="processor",endian="little",addressable-size="1",address-size="4"},{name="hetProcessorShared/P1",pse="0",id="2",type="riscv",variant="RV32I",icount="0",mode="Machine",exception="InstructionAddressMisaligned",thread-type="processor",endian="little",addressable-size="1",address-size="4"},{name="hetProcessorShared/P0",pse="0",id="1",type="or1k",variant="generic",icount="0",mode="SUPERVISOR",exception="RST",thread-type="processor",endian="big",addressable-size="1",address-size="4"}]
+<recv-MPD> 9000089^done,stack=[frame={level="0",addr="0x10c8",func="_main"},frame={level="1",addr="0x1038",func="_main"}]
 <recv-MPD> (mpd) 
-<recv-MPD> 9000089^done,frame={level="0",addr="0x000100c8",func="_start",arch="riscv:rv32"}
+<recv-MPD> 9000090^done,asm_insns=[{inst="l.lwz    r4,0xfffffff8(r2)",address="0x10c8",func-name="_main",offset="236"},{inst="l.sw     0xffffffc0(r2),r4",address="0x10cc",func-name="_main",offset="240"},{inst="l.lwz    r3,0xffffffc0(r2)",address="0x10d0",func-name="_main",offset="244"},{inst="l.addi   r3,r3,0x1",address="0x10d4",func-name="_main",offset="248"},{inst="l.sw     0xffffffbc(r2),r3",address="0x10d8",func-name="_main",offset="252"},{inst="l.lwz    r4,0xffffffbc(r2)",address="0x10dc",func-name="_main",offset="256"},{inst="l.sw     0xfffffff8(r2),r4",address="0x10e0",func-name="_main",offset="260"},{inst="l.j      0x0000104c",address="0x10e4",func-name="_main",offset="264"},{inst="l.nop    0x0",address="0x10e8",func-name="_main",offset="268"},{inst="l.addi   r3,r0,0x0",address="0x10ec",func-name="_main",offset="272"},{inst="l.sw     0xfffffff8(r2),r3",address="0x10f0",func-name="_main",offset="276"},{inst="l.lwz    r4,0xfffffff8(r2)",address="0x10f4",func-name="_main",offset="280"},{inst="l.sw     0xffffffb8(r2),r4",address="0x10f8",func-name="_main",offset="284"},{inst="l.lwz    r3,0xffffffb8(r2)",address="0x10fc",func-name="_main",offset="288"},{inst="l.sfgtui r3,0xf",address="0x1100",func-name="_main",offset="292"},{inst="l.bf     0x000011dc",address="0x1104",func-name="_main",offset="296"},{inst="l.nop    0x0",address="0x1108",func-name="_main",offset="300"},{inst="l.lwz    r4,0xfffffff8(r2)",address="0x110c",func-name="_main",offset="304"},{inst="l.sw     0xffffffb4(r2),r4",address="0x1110",func-name="_main",offset="308"},{inst="l.lwz    r3,0xffffffb4(r2)",address="0x1114",func-name="_main",offset="312"}]
 <recv-MPD> (mpd) 
-<recv-MPD> 9000090^done,asm_insns=[{address="0x000100c8",func-name="_start",offset="0",inst="auipc\tgp,0x18"},{address="0x000100cc",func-name="_start",offset="4",inst="addi\tgp,gp,1204 # 0x2857c"},{address="0x000100d0",func-name="_start",offset="8",inst="addi\ta0,gp,-2024"},{address="0x000100d4",func-name="_start",offset="12",inst="addi\ta2,gp,-1896"},{address="0x000100d8",func-name="_start",offset="16",inst="sub\ta2,a2,a0"},{address="0x000100dc",func-name="_start",offset="20",inst="li\ta1,0"},{address="0x000100e0",func-name="_start",offset="24",inst="jal\tra,0x10484 <memset>"},{address="0x000100e4",func-name="_start",offset="28",inst="auipc\ta0,0x0"},{address="0x000100e8",func-name="_start",offset="32",inst="addi\ta0,a0,680 # 0x1038c <__libc_fini_array>"},{address="0x000100ec",func-name="_start",offset="36",inst="jal\tra,0x10378 <atexit>"},{address="0x000100f0",func-name="_start",offset="40",inst="jal\tra,0x103ec <__libc_init_array>"},{address="0x000100f4",func-name="_start",offset="44",inst="lw\ta0,0(sp)"},{address="0x000100f8",func-name="_start",offset="48",inst="addi\ta1,sp,4"},{address="0x000100fc",func-name="_start",offset="52",inst="li\ta2,0"},{address="0x00010100",func-name="_start",offset="56",inst="jal\tra,0x10260 <main>"},{address="0x00010104",func-name="_start",offset="60",inst="j\t0x10074 <exit>"}]
+<send-MPD> 1000008-stack-select-frame 0
+<recv-MPD> 1000008^done
+<send-MPD> 9000091-break-list
+<send-MPD> 9000092-mpd-context-info
+<send-MPD> 9000093-stack-info-frame
+<send-MPD> 9000094-stack-list-frames 0 100
+<send-MPD> 9000095-data-disassemble -s $pc -e "$pc+4" -- 0
 <recv-MPD> (mpd) 
-<send-MPD> 1000014-mpd-select-processor hetProcessorShared/P0
-<recv-MPD> 1000014^done,new-thread-id="1",group-id="1"
-<send-MPD> 9000091-file-list-exec-source-files
-<send-MPD> 9000092-break-list
-<send-MPD> 9000093-mpd-context-info
-<send-MPD> 9000094-mpd-list-processor-info
-<send-MPD> 9000095-stack-info-frame
-<send-MPD> 9000096-data-disassemble -s $pc -e "$pc+64" -- 0
+<recv-MPD> 9000091^done,BreakpointTable={body=[bkpt={number="1",type="hw watchpoint",enabled="y",times="1",ignore="0",disp="keep",processor="BuggyRiscv/P1",thread-groups=["2"],addr="0x80",addrh="0x83",what="buffer[0]",original-location="buffer[0]"}]}
 <recv-MPD> (mpd) 
-<recv-MPD> 9000091^done,files=[]
+<recv-MPD> 9000092^done,mpd-context-info={processor="BuggyRiscv/P0",time="0.001"}
 <recv-MPD> (mpd) 
-<recv-MPD> 9000092^done,BreakpointTable={body=[]}
+<recv-MPD> 9000093^done,frame={level="0",addr="0x10c8",func="_main"}
 <recv-MPD> (mpd) 
-<recv-MPD> 9000093^done,mpd-context-info={processor="hetProcessorShared/P0",time="0"}
+<recv-MPD> 9000094^done,stack=[frame={level="0",addr="0x10c8",func="_main"},frame={level="1",addr="0x1038",func="_main"}]
 <recv-MPD> (mpd) 
-<recv-MPD> 9000094^done,mpd-list-processor-info=[{name="hetProcessorShared/P2",pse="0",id="3",type="riscv",variant="RV32I",icount="0",mode="Machine",exception="InstructionAddressMisaligned",thread-type="processor",endian="little",addressable-size="1",address-size="4"},{name="hetProcessorShared/P1",pse="0",id="2",type="riscv",variant="RV32I",icount="0",mode="Machine",exception="InstructionAddressMisaligned",thread-type="processor",endian="little",addressable-size="1",address-size="4"},{name="hetProcessorShared/P0",pse="0",id="1",type="or1k",variant="generic",icount="0",mode="SUPERVISOR",exception="RST",thread-type="processor",endian="big",addressable-size="1",address-size="4"}]
-<recv-MPD> (mpd) 
-<recv-MPD> 9000095^done,frame={level="0",addr="0x100",func="start"}
-<recv-MPD> (mpd) 
-<recv-MPD> 9000096^done,asm_insns=[{inst="l.addi   r2,r0,0x0",address="0x100",func-name="start",offset="0"},{inst="l.addi   r3,r0,0x0",address="0x104",func-name="start",offset="4"},{inst="l.addi   r4,r0,0x0",address="0x108",func-name="start",offset="8"},{inst="l.addi   r5,r0,0x0",address="0x10c",func-name="start",offset="12"},{inst="l.addi   r6,r0,0x0",address="0x110",func-name="start",offset="16"},{inst="l.addi   r7,r0,0x0",address="0x114",func-name="start",offset="20"},{inst="l.addi   r8,r0,0x0",address="0x118",func-name="start",offset="24"},{inst="l.addi   r9,r0,0x0",address="0x11c",func-name="start",offset="28"},{inst="l.addi   r10,r0,0x0",address="0x120",func-name="start",offset="32"},{inst="l.addi   r11,r0,0x0",address="0x124",func-name="start",offset="36"},{inst="l.addi   r12,r0,0x0",address="0x128",func-name="start",offset="40"},{inst="l.addi   r13,r0,0x0",address="0x12c",func-name="start",offset="44"},{inst="l.addi   r14,r0,0x0",address="0x130",func-name="start",offset="48"},{inst="l.addi   r15,r0,0x0",address="0x134",func-name="start",offset="52"},{inst="l.addi   r16,r0,0x0",address="0x138",func-name="start",offset="56"},{inst="l.addi   r17,r0,0x0",address="0x13c",func-name="start",offset="60"},{inst="l.addi   r18,r0,0x0",address="0x140",func-name="start",offset="64"},{inst="l.addi   r19,r0,0x0",address="0x144",func-name="start",offset="68"},{inst="l.addi   r20,r0,0x0",address="0x148",func-name="start",offset="72"},{inst="l.addi   r21,r0,0x0",address="0x14c",func-name="start",offset="76"}]
-<recv-MPD> (mpd) 
-<send-MPD> 1000015-mpd-select-processor hetProcessorShared/P1
-<recv-MPD> 1000015^done,new-thread-id="2",group-id="2"
-<send-MPD> 9000097-file-list-exec-source-files
-<send-MPD> 9000098-break-list
-<send-MPD> 9000099-mpd-context-info
-<send-MPD> 9000100-mpd-list-processor-info
-<send-MPD> 9000101-stack-info-frame
-<send-MPD> 9000102-data-disassemble -s $pc -e "$pc+64" -- 0
-<recv-MPD> (mpd) 
-<recv-MPD> 9000097^done,files=[{file="app2.c",fullname="/home/nicooo/Documentos/Mestrado/SCHIP/OVP/het-ovp-dbg/application/app2.c"},{file="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/lock.h",fullname="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/lock.h"},{file="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/_types.h",fullname="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/_types.h"},{file="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/lib/gcc/riscv-none-embed/8.1.0/include/stddef.h",fullname="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/lib/gcc/riscv-none-embed/8.1.0/include/stddef.h"},{file="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/reent.h",fullname="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/reent.h"}]
-<recv-MPD> (mpd) 
-<recv-MPD> 9000098^done,BreakpointTable={body=[]}
-<recv-MPD> (mpd) 
-<recv-MPD> 9000099^done,mpd-context-info={processor="hetProcessorShared/P1",time="0"}
-<recv-MPD> (mpd) 
-<recv-MPD> 9000100^done,mpd-list-processor-info=[{name="hetProcessorShared/P2",pse="0",id="3",type="riscv",variant="RV32I",icount="0",mode="Machine",exception="InstructionAddressMisaligned",thread-type="processor",endian="little",addressable-size="1",address-size="4"},{name="hetProcessorShared/P1",pse="0",id="2",type="riscv",variant="RV32I",icount="0",mode="Machine",exception="InstructionAddressMisaligned",thread-type="processor",endian="little",addressable-size="1",address-size="4"},{name="hetProcessorShared/P0",pse="0",id="1",type="or1k",variant="generic",icount="0",mode="SUPERVISOR",exception="RST",thread-type="processor",endian="big",addressable-size="1",address-size="4"}]
-<recv-MPD> (mpd) 
-<recv-MPD> 9000101^done,frame={level="0",addr="0x000100c8",func="_start",arch="riscv:rv32"}
-<recv-MPD> (mpd) 
-<recv-MPD> 9000102^done,asm_insns=[{address="0x000100c8",func-name="_start",offset="0",inst="auipc\tgp,0x18"},{address="0x000100cc",func-name="_start",offset="4",inst="addi\tgp,gp,1204 # 0x2857c"},{address="0x000100d0",func-name="_start",offset="8",inst="addi\ta0,gp,-2024"},{address="0x000100d4",func-name="_start",offset="12",inst="addi\ta2,gp,-1896"},{address="0x000100d8",func-name="_start",offset="16",inst="sub\ta2,a2,a0"},{address="0x000100dc",func-name="_start",offset="20",inst="li\ta1,0"},{address="0x000100e0",func-name="_start",offset="24",inst="jal\tra,0x10484 <memset>"},{address="0x000100e4",func-name="_start",offset="28",inst="auipc\ta0,0x0"},{address="0x000100e8",func-name="_start",offset="32",inst="addi\ta0,a0,680 # 0x1038c <__libc_fini_array>"},{address="0x000100ec",func-name="_start",offset="36",inst="jal\tra,0x10378 <atexit>"},{address="0x000100f0",func-name="_start",offset="40",inst="jal\tra,0x103ec <__libc_init_array>"},{address="0x000100f4",func-name="_start",offset="44",inst="lw\ta0,0(sp)"},{address="0x000100f8",func-name="_start",offset="48",inst="addi\ta1,sp,4"},{address="0x000100fc",func-name="_start",offset="52",inst="li\ta2,0"},{address="0x00010100",func-name="_start",offset="56",inst="jal\tra,0x10260 <main>"},{address="0x00010104",func-name="_start",offset="60",inst="j\t0x10074 <exit>"}]
-<recv-MPD> (mpd) 
-<send-MPD> 1000016-mpd-select-processor hetProcessorShared/P0
-<recv-MPD> 1000016^done,new-thread-id="1",group-id="1"
-<send-MPD> 9000103-file-list-exec-source-files
-<send-MPD> 9000104-break-list
-<send-MPD> 9000105-mpd-context-info
-<send-MPD> 9000106-mpd-list-processor-info
-<send-MPD> 9000107-stack-info-frame
-<send-MPD> 9000108-data-disassemble -s $pc -e "$pc+64" -- 0
-<recv-MPD> (mpd) 
-<recv-MPD> 9000103^done,files=[]
-<recv-MPD> (mpd) 
-<recv-MPD> 9000104^done,BreakpointTable={body=[]}
-<recv-MPD> (mpd) 
-<recv-MPD> 9000105^done,mpd-context-info={processor="hetProcessorShared/P0",time="0"}
-<recv-MPD> (mpd) 
-<recv-MPD> 9000106^done,mpd-list-processor-info=[{name="hetProcessorShared/P2",pse="0",id="3",type="riscv",variant="RV32I",icount="0",mode="Machine",exception="InstructionAddressMisaligned",thread-type="processor",endian="little",addressable-size="1",address-size="4"},{name="hetProcessorShared/P1",pse="0",id="2",type="riscv",variant="RV32I",icount="0",mode="Machine",exception="InstructionAddressMisaligned",thread-type="processor",endian="little",addressable-size="1",address-size="4"},{name="hetProcessorShared/P0",pse="0",id="1",type="or1k",variant="generic",icount="0",mode="SUPERVISOR",exception="RST",thread-type="processor",endian="big",addressable-size="1",address-size="4"}]
-<recv-MPD> (mpd) 
-<recv-MPD> 9000107^done,frame={level="0",addr="0x100",func="start"}
-<recv-MPD> (mpd) 
-<recv-MPD> 9000108^done,asm_insns=[{inst="l.addi   r2,r0,0x0",address="0x100",func-name="start",offset="0"},{inst="l.addi   r3,r0,0x0",address="0x104",func-name="start",offset="4"},{inst="l.addi   r4,r0,0x0",address="0x108",func-name="start",offset="8"},{inst="l.addi   r5,r0,0x0",address="0x10c",func-name="start",offset="12"},{inst="l.addi   r6,r0,0x0",address="0x110",func-name="start",offset="16"},{inst="l.addi   r7,r0,0x0",address="0x114",func-name="start",offset="20"},{inst="l.addi   r8,r0,0x0",address="0x118",func-name="start",offset="24"},{inst="l.addi   r9,r0,0x0",address="0x11c",func-name="start",offset="28"},{inst="l.addi   r10,r0,0x0",address="0x120",func-name="start",offset="32"},{inst="l.addi   r11,r0,0x0",address="0x124",func-name="start",offset="36"},{inst="l.addi   r12,r0,0x0",address="0x128",func-name="start",offset="40"},{inst="l.addi   r13,r0,0x0",address="0x12c",func-name="start",offset="44"},{inst="l.addi   r14,r0,0x0",address="0x130",func-name="start",offset="48"},{inst="l.addi   r15,r0,0x0",address="0x134",func-name="start",offset="52"},{inst="l.addi   r16,r0,0x0",address="0x138",func-name="start",offset="56"},{inst="l.addi   r17,r0,0x0",address="0x13c",func-name="start",offset="60"},{inst="l.addi   r18,r0,0x0",address="0x140",func-name="start",offset="64"},{inst="l.addi   r19,r0,0x0",address="0x144",func-name="start",offset="68"},{inst="l.addi   r20,r0,0x0",address="0x148",func-name="start",offset="72"},{inst="l.addi   r21,r0,0x0",address="0x14c",func-name="start",offset="76"}]
-<recv-MPD> (mpd) 
-<send-MPD> 1000017-mpd-select-processor hetProcessorShared/P0
-<recv-MPD> 1000017^done
-<send-MPD> 9000109-file-list-exec-source-files
-<send-MPD> 9000110-break-list
-<send-MPD> 9000111-mpd-context-info
-<send-MPD> 9000112-mpd-list-processor-info
-<send-MPD> 9000113-stack-info-frame
-<send-MPD> 9000114-data-disassemble -s $pc -e "$pc+64" -- 0
-<recv-MPD> (mpd) 
-<recv-MPD> 9000109^done,files=[]
-<recv-MPD> (mpd) 
-<recv-MPD> 9000110^done,BreakpointTable={body=[]}
-<recv-MPD> (mpd) 
-<recv-MPD> 9000111^done,mpd-context-info={processor="hetProcessorShared/P0",time="0"}
-<recv-MPD> (mpd) 
-<recv-MPD> 9000112^done,mpd-list-processor-info=[{name="hetProcessorShared/P2",pse="0",id="3",type="riscv",variant="RV32I",icount="0",mode="Machine",exception="InstructionAddressMisaligned",thread-type="processor",endian="little",addressable-size="1",address-size="4"},{name="hetProcessorShared/P1",pse="0",id="2",type="riscv",variant="RV32I",icount="0",mode="Machine",exception="InstructionAddressMisaligned",thread-type="processor",endian="little",addressable-size="1",address-size="4"},{name="hetProcessorShared/P0",pse="0",id="1",type="or1k",variant="generic",icount="0",mode="SUPERVISOR",exception="RST",thread-type="processor",endian="big",addressable-size="1",address-size="4"}]
-<recv-MPD> (mpd) 
-<recv-MPD> 9000113^done,frame={level="0",addr="0x100",func="start"}
-<recv-MPD> (mpd) 
-<recv-MPD> 9000114^done,asm_insns=[{inst="l.addi   r2,r0,0x0",address="0x100",func-name="start",offset="0"},{inst="l.addi   r3,r0,0x0",address="0x104",func-name="start",offset="4"},{inst="l.addi   r4,r0,0x0",address="0x108",func-name="start",offset="8"},{inst="l.addi   r5,r0,0x0",address="0x10c",func-name="start",offset="12"},{inst="l.addi   r6,r0,0x0",address="0x110",func-name="start",offset="16"},{inst="l.addi   r7,r0,0x0",address="0x114",func-name="start",offset="20"},{inst="l.addi   r8,r0,0x0",address="0x118",func-name="start",offset="24"},{inst="l.addi   r9,r0,0x0",address="0x11c",func-name="start",offset="28"},{inst="l.addi   r10,r0,0x0",address="0x120",func-name="start",offset="32"},{inst="l.addi   r11,r0,0x0",address="0x124",func-name="start",offset="36"},{inst="l.addi   r12,r0,0x0",address="0x128",func-name="start",offset="40"},{inst="l.addi   r13,r0,0x0",address="0x12c",func-name="start",offset="44"},{inst="l.addi   r14,r0,0x0",address="0x130",func-name="start",offset="48"},{inst="l.addi   r15,r0,0x0",address="0x134",func-name="start",offset="52"},{inst="l.addi   r16,r0,0x0",address="0x138",func-name="start",offset="56"},{inst="l.addi   r17,r0,0x0",address="0x13c",func-name="start",offset="60"},{inst="l.addi   r18,r0,0x0",address="0x140",func-name="start",offset="64"},{inst="l.addi   r19,r0,0x0",address="0x144",func-name="start",offset="68"},{inst="l.addi   r20,r0,0x0",address="0x148",func-name="start",offset="72"},{inst="l.addi   r21,r0,0x0",address="0x14c",func-name="start",offset="76"}]
-<recv-MPD> (mpd) 
-<send-MPD> 1000018-mpd-select-processor hetProcessorShared/P1
-<recv-MPD> 1000018^done,new-thread-id="2",group-id="2"
-<send-MPD> 9000115-file-list-exec-source-files
-<send-MPD> 9000116-break-list
-<send-MPD> 9000117-mpd-context-info
-<send-MPD> 9000118-mpd-list-processor-info
-<send-MPD> 9000119-stack-info-frame
-<send-MPD> 9000120-data-disassemble -s $pc -e "$pc+64" -- 0
-<recv-MPD> (mpd) 
-<recv-MPD> 9000115^done,files=[{file="app2.c",fullname="/home/nicooo/Documentos/Mestrado/SCHIP/OVP/het-ovp-dbg/application/app2.c"},{file="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/lock.h",fullname="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/lock.h"},{file="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/_types.h",fullname="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/_types.h"},{file="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/lib/gcc/riscv-none-embed/8.1.0/include/stddef.h",fullname="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/lib/gcc/riscv-none-embed/8.1.0/include/stddef.h"},{file="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/reent.h",fullname="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/reent.h"}]
-<recv-MPD> (mpd) 
-<recv-MPD> 9000116^done,BreakpointTable={body=[]}
-<recv-MPD> (mpd) 
-<recv-MPD> 9000117^done,mpd-context-info={processor="hetProcessorShared/P1",time="0"}
-<recv-MPD> (mpd) 
-<recv-MPD> 9000118^done,mpd-list-processor-info=[{name="hetProcessorShared/P2",pse="0",id="3",type="riscv",variant="RV32I",icount="0",mode="Machine",exception="InstructionAddressMisaligned",thread-type="processor",endian="little",addressable-size="1",address-size="4"},{name="hetProcessorShared/P1",pse="0",id="2",type="riscv",variant="RV32I",icount="0",mode="Machine",exception="InstructionAddressMisaligned",thread-type="processor",endian="little",addressable-size="1",address-size="4"},{name="hetProcessorShared/P0",pse="0",id="1",type="or1k",variant="generic",icount="0",mode="SUPERVISOR",exception="RST",thread-type="processor",endian="big",addressable-size="1",address-size="4"}]
-<recv-MPD> (mpd) 
-<recv-MPD> 9000119^done,frame={level="0",addr="0x000100c8",func="_start",arch="riscv:rv32"}
-<recv-MPD> (mpd) 
-<recv-MPD> 9000120^done,asm_insns=[{address="0x000100c8",func-name="_start",offset="0",inst="auipc\tgp,0x18"},{address="0x000100cc",func-name="_start",offset="4",inst="addi\tgp,gp,1204 # 0x2857c"},{address="0x000100d0",func-name="_start",offset="8",inst="addi\ta0,gp,-2024"},{address="0x000100d4",func-name="_start",offset="12",inst="addi\ta2,gp,-1896"},{address="0x000100d8",func-name="_start",offset="16",inst="sub\ta2,a2,a0"},{address="0x000100dc",func-name="_start",offset="20",inst="li\ta1,0"},{address="0x000100e0",func-name="_start",offset="24",inst="jal\tra,0x10484 <memset>"},{address="0x000100e4",func-name="_start",offset="28",inst="auipc\ta0,0x0"},{address="0x000100e8",func-name="_start",offset="32",inst="addi\ta0,a0,680 # 0x1038c <__libc_fini_array>"},{address="0x000100ec",func-name="_start",offset="36",inst="jal\tra,0x10378 <atexit>"},{address="0x000100f0",func-name="_start",offset="40",inst="jal\tra,0x103ec <__libc_init_array>"},{address="0x000100f4",func-name="_start",offset="44",inst="lw\ta0,0(sp)"},{address="0x000100f8",func-name="_start",offset="48",inst="addi\ta1,sp,4"},{address="0x000100fc",func-name="_start",offset="52",inst="li\ta2,0"},{address="0x00010100",func-name="_start",offset="56",inst="jal\tra,0x10260 <main>"},{address="0x00010104",func-name="_start",offset="60",inst="j\t0x10074 <exit>"}]
-<recv-MPD> (mpd) 
-<send-MPD> 1000019-mpd-select-processor hetProcessorShared/P1
-<recv-MPD> 1000019^done
-<send-MPD> 9000121-file-list-exec-source-files
-<send-MPD> 9000122-break-list
-<send-MPD> 9000123-mpd-context-info
-<send-MPD> 9000124-mpd-list-processor-info
-<send-MPD> 9000125-stack-info-frame
-<send-MPD> 9000126-data-disassemble -s $pc -e "$pc+64" -- 0
-<recv-MPD> (mpd) 
-<recv-MPD> 9000121^done,files=[{file="app2.c",fullname="/home/nicooo/Documentos/Mestrado/SCHIP/OVP/het-ovp-dbg/application/app2.c"},{file="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/lock.h",fullname="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/lock.h"},{file="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/_types.h",fullname="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/_types.h"},{file="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/lib/gcc/riscv-none-embed/8.1.0/include/stddef.h",fullname="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/lib/gcc/riscv-none-embed/8.1.0/include/stddef.h"},{file="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/reent.h",fullname="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/reent.h"}]
-<recv-MPD> (mpd) 
-<recv-MPD> 9000122^done,BreakpointTable={body=[]}
-<recv-MPD> (mpd) 
-<recv-MPD> 9000123^done,mpd-context-info={processor="hetProcessorShared/P1",time="0"}
-<recv-MPD> (mpd) 
-<recv-MPD> 9000124^done,mpd-list-processor-info=[{name="hetProcessorShared/P2",pse="0",id="3",type="riscv",variant="RV32I",icount="0",mode="Machine",exception="InstructionAddressMisaligned",thread-type="processor",endian="little",addressable-size="1",address-size="4"},{name="hetProcessorShared/P1",pse="0",id="2",type="riscv",variant="RV32I",icount="0",mode="Machine",exception="InstructionAddressMisaligned",thread-type="processor",endian="little",addressable-size="1",address-size="4"},{name="hetProcessorShared/P0",pse="0",id="1",type="or1k",variant="generic",icount="0",mode="SUPERVISOR",exception="RST",thread-type="processor",endian="big",addressable-size="1",address-size="4"}]
-<recv-MPD> (mpd) 
-<recv-MPD> 9000125^done,frame={level="0",addr="0x000100c8",func="_start",arch="riscv:rv32"}
-<recv-MPD> (mpd) 
-<recv-MPD> 9000126^done,asm_insns=[{address="0x000100c8",func-name="_start",offset="0",inst="auipc\tgp,0x18"},{address="0x000100cc",func-name="_start",offset="4",inst="addi\tgp,gp,1204 # 0x2857c"},{address="0x000100d0",func-name="_start",offset="8",inst="addi\ta0,gp,-2024"},{address="0x000100d4",func-name="_start",offset="12",inst="addi\ta2,gp,-1896"},{address="0x000100d8",func-name="_start",offset="16",inst="sub\ta2,a2,a0"},{address="0x000100dc",func-name="_start",offset="20",inst="li\ta1,0"},{address="0x000100e0",func-name="_start",offset="24",inst="jal\tra,0x10484 <memset>"},{address="0x000100e4",func-name="_start",offset="28",inst="auipc\ta0,0x0"},{address="0x000100e8",func-name="_start",offset="32",inst="addi\ta0,a0,680 # 0x1038c <__libc_fini_array>"},{address="0x000100ec",func-name="_start",offset="36",inst="jal\tra,0x10378 <atexit>"},{address="0x000100f0",func-name="_start",offset="40",inst="jal\tra,0x103ec <__libc_init_array>"},{address="0x000100f4",func-name="_start",offset="44",inst="lw\ta0,0(sp)"},{address="0x000100f8",func-name="_start",offset="48",inst="addi\ta1,sp,4"},{address="0x000100fc",func-name="_start",offset="52",inst="li\ta2,0"},{address="0x00010100",func-name="_start",offset="56",inst="jal\tra,0x10260 <main>"},{address="0x00010104",func-name="_start",offset="60",inst="j\t0x10074 <exit>"}]
-<recv-MPD> (mpd) 
-<send-MPD> 1000020-mpd-select-processor hetProcessorShared/P0
-<recv-MPD> 1000020^done,new-thread-id="1",group-id="1"
-<send-MPD> 9000127-file-list-exec-source-files
-<send-MPD> 9000128-break-list
-<send-MPD> 9000129-mpd-context-info
-<send-MPD> 9000130-mpd-list-processor-info
-<send-MPD> 9000131-stack-info-frame
-<send-MPD> 9000132-data-disassemble -s $pc -e "$pc+64" -- 0
-<recv-MPD> (mpd) 
-<recv-MPD> 9000127^done,files=[]
-<recv-MPD> (mpd) 
-<recv-MPD> 9000128^done,BreakpointTable={body=[]}
-<recv-MPD> (mpd) 
-<recv-MPD> 9000129^done,mpd-context-info={processor="hetProcessorShared/P0",time="0"}
-<recv-MPD> (mpd) 
-<recv-MPD> 9000130^done,mpd-list-processor-info=[{name="hetProcessorShared/P2",pse="0",id="3",type="riscv",variant="RV32I",icount="0",mode="Machine",exception="InstructionAddressMisaligned",thread-type="processor",endian="little",addressable-size="1",address-size="4"},{name="hetProcessorShared/P1",pse="0",id="2",type="riscv",variant="RV32I",icount="0",mode="Machine",exception="InstructionAddressMisaligned",thread-type="processor",endian="little",addressable-size="1",address-size="4"},{name="hetProcessorShared/P0",pse="0",id="1",type="or1k",variant="generic",icount="0",mode="SUPERVISOR",exception="RST",thread-type="processor",endian="big",addressable-size="1",address-size="4"}]
-<recv-MPD> (mpd) 
-<recv-MPD> 9000131^done,frame={level="0",addr="0x100",func="start"}
-<recv-MPD> (mpd) 
-<recv-MPD> 9000132^done,asm_insns=[{inst="l.addi   r2,r0,0x0",address="0x100",func-name="start",offset="0"},{inst="l.addi   r3,r0,0x0",address="0x104",func-name="start",offset="4"},{inst="l.addi   r4,r0,0x0",address="0x108",func-name="start",offset="8"},{inst="l.addi   r5,r0,0x0",address="0x10c",func-name="start",offset="12"},{inst="l.addi   r6,r0,0x0",address="0x110",func-name="start",offset="16"},{inst="l.addi   r7,r0,0x0",address="0x114",func-name="start",offset="20"},{inst="l.addi   r8,r0,0x0",address="0x118",func-name="start",offset="24"},{inst="l.addi   r9,r0,0x0",address="0x11c",func-name="start",offset="28"},{inst="l.addi   r10,r0,0x0",address="0x120",func-name="start",offset="32"},{inst="l.addi   r11,r0,0x0",address="0x124",func-name="start",offset="36"},{inst="l.addi   r12,r0,0x0",address="0x128",func-name="start",offset="40"},{inst="l.addi   r13,r0,0x0",address="0x12c",func-name="start",offset="44"},{inst="l.addi   r14,r0,0x0",address="0x130",func-name="start",offset="48"},{inst="l.addi   r15,r0,0x0",address="0x134",func-name="start",offset="52"},{inst="l.addi   r16,r0,0x0",address="0x138",func-name="start",offset="56"},{inst="l.addi   r17,r0,0x0",address="0x13c",func-name="start",offset="60"},{inst="l.addi   r18,r0,0x0",address="0x140",func-name="start",offset="64"},{inst="l.addi   r19,r0,0x0",address="0x144",func-name="start",offset="68"},{inst="l.addi   r20,r0,0x0",address="0x148",func-name="start",offset="72"},{inst="l.addi   r21,r0,0x0",address="0x14c",func-name="start",offset="76"}]
-<recv-MPD> (mpd) 
-<send-MPD> 1000021-mpd-select-processor hetProcessorShared/P1
-<recv-MPD> 1000021^done,new-thread-id="2",group-id="2"
-<send-MPD> 9000133-file-list-exec-source-files
-<send-MPD> 9000134-break-list
-<send-MPD> 9000135-mpd-context-info
-<send-MPD> 9000136-mpd-list-processor-info
-<send-MPD> 9000137-stack-info-frame
-<send-MPD> 9000138-data-disassemble -s $pc -e "$pc+64" -- 0
-<recv-MPD> (mpd) 
-<recv-MPD> 9000133^done,files=[{file="app2.c",fullname="/home/nicooo/Documentos/Mestrado/SCHIP/OVP/het-ovp-dbg/application/app2.c"},{file="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/lock.h",fullname="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/lock.h"},{file="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/_types.h",fullname="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/_types.h"},{file="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/lib/gcc/riscv-none-embed/8.1.0/include/stddef.h",fullname="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/lib/gcc/riscv-none-embed/8.1.0/include/stddef.h"},{file="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/reent.h",fullname="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/reent.h"}]
-<recv-MPD> (mpd) 
-<recv-MPD> 9000134^done,BreakpointTable={body=[]}
-<recv-MPD> (mpd) 
-<recv-MPD> 9000135^done,mpd-context-info={processor="hetProcessorShared/P1",time="0"}
-<recv-MPD> (mpd) 
-<recv-MPD> 9000136^done,mpd-list-processor-info=[{name="hetProcessorShared/P2",pse="0",id="3",type="riscv",variant="RV32I",icount="0",mode="Machine",exception="InstructionAddressMisaligned",thread-type="processor",endian="little",addressable-size="1",address-size="4"},{name="hetProcessorShared/P1",pse="0",id="2",type="riscv",variant="RV32I",icount="0",mode="Machine",exception="InstructionAddressMisaligned",thread-type="processor",endian="little",addressable-size="1",address-size="4"},{name="hetProcessorShared/P0",pse="0",id="1",type="or1k",variant="generic",icount="0",mode="SUPERVISOR",exception="RST",thread-type="processor",endian="big",addressable-size="1",address-size="4"}]
-<recv-MPD> (mpd) 
-<recv-MPD> 9000137^done,frame={level="0",addr="0x000100c8",func="_start",arch="riscv:rv32"}
-<recv-MPD> (mpd) 
-<recv-MPD> 9000138^done,asm_insns=[{address="0x000100c8",func-name="_start",offset="0",inst="auipc\tgp,0x18"},{address="0x000100cc",func-name="_start",offset="4",inst="addi\tgp,gp,1204 # 0x2857c"},{address="0x000100d0",func-name="_start",offset="8",inst="addi\ta0,gp,-2024"},{address="0x000100d4",func-name="_start",offset="12",inst="addi\ta2,gp,-1896"},{address="0x000100d8",func-name="_start",offset="16",inst="sub\ta2,a2,a0"},{address="0x000100dc",func-name="_start",offset="20",inst="li\ta1,0"},{address="0x000100e0",func-name="_start",offset="24",inst="jal\tra,0x10484 <memset>"},{address="0x000100e4",func-name="_start",offset="28",inst="auipc\ta0,0x0"},{address="0x000100e8",func-name="_start",offset="32",inst="addi\ta0,a0,680 # 0x1038c <__libc_fini_array>"},{address="0x000100ec",func-name="_start",offset="36",inst="jal\tra,0x10378 <atexit>"},{address="0x000100f0",func-name="_start",offset="40",inst="jal\tra,0x103ec <__libc_init_array>"},{address="0x000100f4",func-name="_start",offset="44",inst="lw\ta0,0(sp)"},{address="0x000100f8",func-name="_start",offset="48",inst="addi\ta1,sp,4"},{address="0x000100fc",func-name="_start",offset="52",inst="li\ta2,0"},{address="0x00010100",func-name="_start",offset="56",inst="jal\tra,0x10260 <main>"},{address="0x00010104",func-name="_start",offset="60",inst="j\t0x10074 <exit>"}]
-<recv-MPD> (mpd) 
-<send-MPD> 1000022-mpd-select-processor hetProcessorShared/P0
-<recv-MPD> 1000022^done,new-thread-id="1",group-id="1"
-<send-MPD> 9000139-file-list-exec-source-files
-<send-MPD> 9000140-break-list
-<send-MPD> 9000141-mpd-context-info
-<send-MPD> 9000142-mpd-list-processor-info
-<send-MPD> 9000143-stack-info-frame
-<send-MPD> 9000144-data-disassemble -s $pc -e "$pc+64" -- 0
-<recv-MPD> (mpd) 
-<recv-MPD> 9000139^done,files=[]
-<recv-MPD> (mpd) 
-<recv-MPD> 9000140^done,BreakpointTable={body=[]}
-<recv-MPD> (mpd) 
-<recv-MPD> 9000141^done,mpd-context-info={processor="hetProcessorShared/P0",time="0"}
-<recv-MPD> (mpd) 
-<recv-MPD> 9000142^done,mpd-list-processor-info=[{name="hetProcessorShared/P2",pse="0",id="3",type="riscv",variant="RV32I",icount="0",mode="Machine",exception="InstructionAddressMisaligned",thread-type="processor",endian="little",addressable-size="1",address-size="4"},{name="hetProcessorShared/P1",pse="0",id="2",type="riscv",variant="RV32I",icount="0",mode="Machine",exception="InstructionAddressMisaligned",thread-type="processor",endian="little",addressable-size="1",address-size="4"},{name="hetProcessorShared/P0",pse="0",id="1",type="or1k",variant="generic",icount="0",mode="SUPERVISOR",exception="RST",thread-type="processor",endian="big",addressable-size="1",address-size="4"}]
-<recv-MPD> (mpd) 
-<recv-MPD> 9000143^done,frame={level="0",addr="0x100",func="start"}
-<recv-MPD> (mpd) 
-<recv-MPD> 9000144^done,asm_insns=[{inst="l.addi   r2,r0,0x0",address="0x100",func-name="start",offset="0"},{inst="l.addi   r3,r0,0x0",address="0x104",func-name="start",offset="4"},{inst="l.addi   r4,r0,0x0",address="0x108",func-name="start",offset="8"},{inst="l.addi   r5,r0,0x0",address="0x10c",func-name="start",offset="12"},{inst="l.addi   r6,r0,0x0",address="0x110",func-name="start",offset="16"},{inst="l.addi   r7,r0,0x0",address="0x114",func-name="start",offset="20"},{inst="l.addi   r8,r0,0x0",address="0x118",func-name="start",offset="24"},{inst="l.addi   r9,r0,0x0",address="0x11c",func-name="start",offset="28"},{inst="l.addi   r10,r0,0x0",address="0x120",func-name="start",offset="32"},{inst="l.addi   r11,r0,0x0",address="0x124",func-name="start",offset="36"},{inst="l.addi   r12,r0,0x0",address="0x128",func-name="start",offset="40"},{inst="l.addi   r13,r0,0x0",address="0x12c",func-name="start",offset="44"},{inst="l.addi   r14,r0,0x0",address="0x130",func-name="start",offset="48"},{inst="l.addi   r15,r0,0x0",address="0x134",func-name="start",offset="52"},{inst="l.addi   r16,r0,0x0",address="0x138",func-name="start",offset="56"},{inst="l.addi   r17,r0,0x0",address="0x13c",func-name="start",offset="60"},{inst="l.addi   r18,r0,0x0",address="0x140",func-name="start",offset="64"},{inst="l.addi   r19,r0,0x0",address="0x144",func-name="start",offset="68"},{inst="l.addi   r20,r0,0x0",address="0x148",func-name="start",offset="72"},{inst="l.addi   r21,r0,0x0",address="0x14c",func-name="start",offset="76"}]
-<recv-MPD> (mpd) 
-<send-MPD> 1000023-mpd-select-processor hetProcessorShared/P1
-<recv-MPD> 1000023^done,new-thread-id="2",group-id="2"
-<send-MPD> 9000145-file-list-exec-source-files
-<send-MPD> 9000146-break-list
-<send-MPD> 9000147-mpd-context-info
-<send-MPD> 9000148-mpd-list-processor-info
-<send-MPD> 9000149-stack-info-frame
-<send-MPD> 9000150-data-disassemble -s $pc -e "$pc+64" -- 0
-<recv-MPD> (mpd) 
-<recv-MPD> 9000145^done,files=[{file="app2.c",fullname="/home/nicooo/Documentos/Mestrado/SCHIP/OVP/het-ovp-dbg/application/app2.c"},{file="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/lock.h",fullname="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/lock.h"},{file="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/_types.h",fullname="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/_types.h"},{file="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/lib/gcc/riscv-none-embed/8.1.0/include/stddef.h",fullname="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/lib/gcc/riscv-none-embed/8.1.0/include/stddef.h"},{file="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/reent.h",fullname="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/reent.h"}]
-<recv-MPD> (mpd) 
-<recv-MPD> 9000146^done,BreakpointTable={body=[]}
-<recv-MPD> (mpd) 
-<recv-MPD> 9000147^done,mpd-context-info={processor="hetProcessorShared/P1",time="0"}
-<recv-MPD> (mpd) 
-<recv-MPD> 9000148^done,mpd-list-processor-info=[{name="hetProcessorShared/P2",pse="0",id="3",type="riscv",variant="RV32I",icount="0",mode="Machine",exception="InstructionAddressMisaligned",thread-type="processor",endian="little",addressable-size="1",address-size="4"},{name="hetProcessorShared/P1",pse="0",id="2",type="riscv",variant="RV32I",icount="0",mode="Machine",exception="InstructionAddressMisaligned",thread-type="processor",endian="little",addressable-size="1",address-size="4"},{name="hetProcessorShared/P0",pse="0",id="1",type="or1k",variant="generic",icount="0",mode="SUPERVISOR",exception="RST",thread-type="processor",endian="big",addressable-size="1",address-size="4"}]
-<recv-MPD> (mpd) 
-<recv-MPD> 9000149^done,frame={level="0",addr="0x000100c8",func="_start",arch="riscv:rv32"}
-<recv-MPD> (mpd) 
-<recv-MPD> 9000150^done,asm_insns=[{address="0x000100c8",func-name="_start",offset="0",inst="auipc\tgp,0x18"},{address="0x000100cc",func-name="_start",offset="4",inst="addi\tgp,gp,1204 # 0x2857c"},{address="0x000100d0",func-name="_start",offset="8",inst="addi\ta0,gp,-2024"},{address="0x000100d4",func-name="_start",offset="12",inst="addi\ta2,gp,-1896"},{address="0x000100d8",func-name="_start",offset="16",inst="sub\ta2,a2,a0"},{address="0x000100dc",func-name="_start",offset="20",inst="li\ta1,0"},{address="0x000100e0",func-name="_start",offset="24",inst="jal\tra,0x10484 <memset>"},{address="0x000100e4",func-name="_start",offset="28",inst="auipc\ta0,0x0"},{address="0x000100e8",func-name="_start",offset="32",inst="addi\ta0,a0,680 # 0x1038c <__libc_fini_array>"},{address="0x000100ec",func-name="_start",offset="36",inst="jal\tra,0x10378 <atexit>"},{address="0x000100f0",func-name="_start",offset="40",inst="jal\tra,0x103ec <__libc_init_array>"},{address="0x000100f4",func-name="_start",offset="44",inst="lw\ta0,0(sp)"},{address="0x000100f8",func-name="_start",offset="48",inst="addi\ta1,sp,4"},{address="0x000100fc",func-name="_start",offset="52",inst="li\ta2,0"},{address="0x00010100",func-name="_start",offset="56",inst="jal\tra,0x10260 <main>"},{address="0x00010104",func-name="_start",offset="60",inst="j\t0x10074 <exit>"}]
-<recv-MPD> (mpd) 
-<send-MPD> 1000024-mpd-select-processor hetProcessorShared/P2
-<recv-MPD> 1000024^done,new-thread-id="3",group-id="3"
-<send-MPD> 9000151-file-list-exec-source-files
-<send-MPD> 9000152-break-list
-<send-MPD> 9000153-mpd-context-info
-<send-MPD> 9000154-mpd-list-processor-info
-<send-MPD> 9000155-stack-info-frame
-<send-MPD> 9000156-data-disassemble -s $pc -e "$pc+64" -- 0
-<recv-MPD> (mpd) 
-<recv-MPD> 9000151^done,files=[{file="app3.c",fullname="/home/nicooo/Documentos/Mestrado/SCHIP/OVP/het-ovp-dbg/application/app3.c"},{file="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/lock.h",fullname="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/lock.h"},{file="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/_types.h",fullname="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/_types.h"},{file="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/lib/gcc/riscv-none-embed/8.1.0/include/stddef.h",fullname="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/lib/gcc/riscv-none-embed/8.1.0/include/stddef.h"},{file="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/reent.h",fullname="/opt/imperas/Imperas.20191106/lib/Linux64/CrossCompiler/riscv-none-embed/riscv-none-embed/include/sys/reent.h"}]
-<recv-MPD> (mpd) 
-<recv-MPD> 9000152^done,BreakpointTable={body=[]}
-<recv-MPD> (mpd) 
-<recv-MPD> 9000153^done,mpd-context-info={processor="hetProcessorShared/P2",time="0"}
-<recv-MPD> (mpd) 
-<recv-MPD> 9000154^done,mpd-list-processor-info=[{name="hetProcessorShared/P2",pse="0",id="3",type="riscv",variant="RV32I",icount="0",mode="Machine",exception="InstructionAddressMisaligned",thread-type="processor",endian="little",addressable-size="1",address-size="4"},{name="hetProcessorShared/P1",pse="0",id="2",type="riscv",variant="RV32I",icount="0",mode="Machine",exception="InstructionAddressMisaligned",thread-type="processor",endian="little",addressable-size="1",address-size="4"},{name="hetProcessorShared/P0",pse="0",id="1",type="or1k",variant="generic",icount="0",mode="SUPERVISOR",exception="RST",thread-type="processor",endian="big",addressable-size="1",address-size="4"}]
-<recv-MPD> (mpd) 
-<recv-MPD> 9000155^done,frame={level="0",addr="0x000100c8",func="_start",arch="riscv:rv32"}
-<recv-MPD> (mpd) 
-<recv-MPD> 9000156^done,asm_insns=[{address="0x000100c8",func-name="_start",offset="0",inst="auipc\tgp,0x18"},{address="0x000100cc",func-name="_start",offset="4",inst="addi\tgp,gp,1204 # 0x2857c"},{address="0x000100d0",func-name="_start",offset="8",inst="addi\ta0,gp,-2024"},{address="0x000100d4",func-name="_start",offset="12",inst="addi\ta2,gp,-1896"},{address="0x000100d8",func-name="_start",offset="16",inst="sub\ta2,a2,a0"},{address="0x000100dc",func-name="_start",offset="20",inst="li\ta1,0"},{address="0x000100e0",func-name="_start",offset="24",inst="jal\tra,0x10484 <memset>"},{address="0x000100e4",func-name="_start",offset="28",inst="auipc\ta0,0x0"},{address="0x000100e8",func-name="_start",offset="32",inst="addi\ta0,a0,680 # 0x1038c <__libc_fini_array>"},{address="0x000100ec",func-name="_start",offset="36",inst="jal\tra,0x10378 <atexit>"},{address="0x000100f0",func-name="_start",offset="40",inst="jal\tra,0x103ec <__libc_init_array>"},{address="0x000100f4",func-name="_start",offset="44",inst="lw\ta0,0(sp)"},{address="0x000100f8",func-name="_start",offset="48",inst="addi\ta1,sp,4"},{address="0x000100fc",func-name="_start",offset="52",inst="li\ta2,0"},{address="0x00010100",func-name="_start",offset="56",inst="jal\tra,0x10260 <main>"},{address="0x00010104",func-name="_start",offset="60",inst="j\t0x10074 <exit>"}]
-<recv-MPD> (mpd) 
-<send-MPD> 1000025-mpd-select-processor hetProcessorShared/P0
-<recv-MPD> 1000025^done,new-thread-id="1",group-id="1"
-<send-MPD> 9000157-file-list-exec-source-files
-<send-MPD> 9000158-break-list
-<send-MPD> 9000159-mpd-context-info
-<send-MPD> 9000160-mpd-list-processor-info
-<send-MPD> 9000161-stack-info-frame
-<send-MPD> 9000162-data-disassemble -s $pc -e "$pc+64" -- 0
-<recv-MPD> (mpd) 
-<recv-MPD> 9000157^done,files=[]
-<recv-MPD> (mpd) 
-<recv-MPD> 9000158^done,BreakpointTable={body=[]}
-<recv-MPD> (mpd) 
-<recv-MPD> 9000159^done,mpd-context-info={processor="hetProcessorShared/P0",time="0"}
-<recv-MPD> (mpd) 
-<recv-MPD> 9000160^done,mpd-list-processor-info=[{name="hetProcessorShared/P2",pse="0",id="3",type="riscv",variant="RV32I",icount="0",mode="Machine",exception="InstructionAddressMisaligned",thread-type="processor",endian="little",addressable-size="1",address-size="4"},{name="hetProcessorShared/P1",pse="0",id="2",type="riscv",variant="RV32I",icount="0",mode="Machine",exception="InstructionAddressMisaligned",thread-type="processor",endian="little",addressable-size="1",address-size="4"},{name="hetProcessorShared/P0",pse="0",id="1",type="or1k",variant="generic",icount="0",mode="SUPERVISOR",exception="RST",thread-type="processor",endian="big",addressable-size="1",address-size="4"}]
-<recv-MPD> (mpd) 
-<recv-MPD> 9000161^done,frame={level="0",addr="0x100",func="start"}
-<recv-MPD> (mpd) 
-<recv-MPD> 9000162^done,asm_insns=[{inst="l.addi   r2,r0,0x0",address="0x100",func-name="start",offset="0"},{inst="l.addi   r3,r0,0x0",address="0x104",func-name="start",offset="4"},{inst="l.addi   r4,r0,0x0",address="0x108",func-name="start",offset="8"},{inst="l.addi   r5,r0,0x0",address="0x10c",func-name="start",offset="12"},{inst="l.addi   r6,r0,0x0",address="0x110",func-name="start",offset="16"},{inst="l.addi   r7,r0,0x0",address="0x114",func-name="start",offset="20"},{inst="l.addi   r8,r0,0x0",address="0x118",func-name="start",offset="24"},{inst="l.addi   r9,r0,0x0",address="0x11c",func-name="start",offset="28"},{inst="l.addi   r10,r0,0x0",address="0x120",func-name="start",offset="32"},{inst="l.addi   r11,r0,0x0",address="0x124",func-name="start",offset="36"},{inst="l.addi   r12,r0,0x0",address="0x128",func-name="start",offset="40"},{inst="l.addi   r13,r0,0x0",address="0x12c",func-name="start",offset="44"},{inst="l.addi   r14,r0,0x0",address="0x130",func-name="start",offset="48"},{inst="l.addi   r15,r0,0x0",address="0x134",func-name="start",offset="52"},{inst="l.addi   r16,r0,0x0",address="0x138",func-name="start",offset="56"},{inst="l.addi   r17,r0,0x0",address="0x13c",func-name="start",offset="60"},{inst="l.addi   r18,r0,0x0",address="0x140",func-name="start",offset="64"},{inst="l.addi   r19,r0,0x0",address="0x144",func-name="start",offset="68"},{inst="l.addi   r20,r0,0x0",address="0x148",func-name="start",offset="72"},{inst="l.addi   r21,r0,0x0",address="0x14c",func-name="start",offset="76"}]
+<recv-MPD> 9000095^done,asm_insns=[{inst="l.lwz    r4,0xfffffff8(r2)",address="0x10c8",func-name="_main",offset="236"},{inst="l.sw     0xffffffc0(r2),r4",address="0x10cc",func-name="_main",offset="240"},{inst="l.lwz    r3,0xffffffc0(r2)",address="0x10d0",func-name="_main",offset="244"},{inst="l.addi   r3,r3,0x1",address="0x10d4",func-name="_main",offset="248"},{inst="l.sw     0xffffffbc(r2),r3",address="0x10d8",func-name="_main",offset="252"},{inst="l.lwz    r4,0xffffffbc(r2)",address="0x10dc",func-name="_main",offset="256"},{inst="l.sw     0xfffffff8(r2),r4",address="0x10e0",func-name="_main",offset="260"},{inst="l.j      0x0000104c",address="0x10e4",func-name="_main",offset="264"},{inst="l.nop    0x0",address="0x10e8",func-name="_main",offset="268"},{inst="l.addi   r3,r0,0x0",address="0x10ec",func-name="_main",offset="272"},{inst="l.sw     0xfffffff8(r2),r3",address="0x10f0",func-name="_main",offset="276"},{inst="l.lwz    r4,0xfffffff8(r2)",address="0x10f4",func-name="_main",offset="280"},{inst="l.sw     0xffffffb8(r2),r4",address="0x10f8",func-name="_main",offset="284"},{inst="l.lwz    r3,0xffffffb8(r2)",address="0x10fc",func-name="_main",offset="288"},{inst="l.sfgtui r3,0xf",address="0x1100",func-name="_main",offset="292"},{inst="l.bf     0x000011dc",address="0x1104",func-name="_main",offset="296"},{inst="l.nop    0x0",address="0x1108",func-name="_main",offset="300"},{inst="l.lwz    r4,0xfffffff8(r2)",address="0x110c",func-name="_main",offset="304"},{inst="l.sw     0xffffffb4(r2),r4",address="0x1110",func-name="_main",offset="308"},{inst="l.lwz    r3,0xffffffb4(r2)",address="0x1114",func-name="_main",offset="312"}]
 <recv-MPD> (mpd) 

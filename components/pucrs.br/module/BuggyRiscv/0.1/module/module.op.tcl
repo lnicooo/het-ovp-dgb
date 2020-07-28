@@ -19,8 +19,10 @@
 ihwnew -name hetProcessorShared
 
 # add the processors
-
-ihwaddprocessor -type or1k -instancename P0 -semihostname  or1kNewlib -variant generic
+ihwaddprocessor -instancename P0 \
+                -vendor ovpworld.org -library processor -type or1k -version 1.0 \
+                -variant generic \
+                -semihostname or1kNewlib
 
 ihwaddprocessor -instancename P1 \
                 -vendor riscv.ovpworld.org -library processor -type riscv -version 1.0 \

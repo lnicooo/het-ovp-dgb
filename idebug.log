@@ -9,181 +9,114 @@
 9000006-mpd-context-info
 9000007-stack-info-frame
 9000008-data-disassemble -s $pc -e "$pc+4" -- 0
+processor p1
+#Processors in platform:
+#    P2
+#    P1
+#    P0
+processor P1
 9000009-break-list
 9000010-mpd-context-info
-9000011-mpd-list-processor-info
-9000012-mpd-list-events
-9000013-stack-info-frame
-9000014-data-disassemble -s $pc -e "$pc+4" -- 0
-1000003-mpd-select-processor hetProcessorShared/P0
-9000015-break-list
-9000016-mpd-context-info
-9000017-mpd-list-processor-info
-9000018-stack-info-frame
-9000019-data-disassemble -s $pc -e "$pc+64" -- 0
-9000020-file-list-exec-source-files
+9000011-stack-info-frame
+9000012-data-disassemble -s $pc -e "$pc+4" -- 0
+9000013-break-list
+9000014-mpd-context-info
+9000015-stack-info-frame
+9000016-data-disassemble -s $pc -e "$pc+4" -- 0
+watch buffer[0]
+#Created watchpoint 1
+9000017-break-list
+9000018-mpd-context-info
+9000019-stack-info-frame
+9000020-data-disassemble -s $pc -e "$pc+4" -- 0
+watchignore 1 P1
 9000021-break-list
 9000022-mpd-context-info
-9000023-mpd-list-processor-info
-9000024-stack-info-frame
-9000025-data-disassemble -s $pc -e "$pc+64" -- 0
-1000004-mpd-select-processor hetProcessorShared/P1
-9000026-break-list
-9000027-mpd-context-info
-9000028-mpd-list-processor-info
-9000029-stack-info-frame
-9000030-data-disassemble -s $pc -e "$pc+64" -- 0
-9000031-file-list-exec-source-files
-9000032-break-list
-9000033-mpd-context-info
-9000034-mpd-list-processor-info
+9000023-stack-info-frame
+9000024-data-disassemble -s $pc -e "$pc+4" -- 0
+continue
+#
+#Watchpoint 1 for buffer[0] triggered by processor P0
+#0x10c8 <_main+236>:	l.lwz    r4,0xfffffff8(r2)
+9000025-break-list
+9000026-mpd-context-info
+9000027-stack-info-frame
+9000028-data-disassemble -s $pc -e "$pc+4" -- 0
+9000029-break-list
+9000030-mpd-context-info
+9000031-stack-info-frame
+9000032-data-disassemble -s $pc -e "$pc+4" -- 0
+list
+9000033-break-list
+9000034-mpd-context-info
 9000035-stack-info-frame
-9000036-data-disassemble -s $pc -e "$pc+64" -- 0
-1000005-mpd-select-processor hetProcessorShared/P2
-9000037-file-list-exec-source-files
-9000038-break-list
-9000039-mpd-context-info
-9000040-mpd-list-processor-info
-9000041-stack-info-frame
-9000042-data-disassemble -s $pc -e "$pc+64" -- 0
-1000006-mpd-select-processor hetProcessorShared/P1
-9000043-file-list-exec-source-files
-9000044-break-list
-9000045-mpd-context-info
-9000046-mpd-list-processor-info
+9000036-data-disassemble -s $pc -e "$pc+4" -- 0
+list
+9000037-break-list
+9000038-mpd-context-info
+9000039-stack-info-frame
+9000040-data-disassemble -s $pc -e "$pc+4" -- 0
+list
+9000041-break-list
+9000042-mpd-context-info
+9000043-stack-info-frame
+9000044-data-disassemble -s $pc -e "$pc+4" -- 0
+print &buffer[b]
+9000045-break-list
+9000046-mpd-context-info
 9000047-stack-info-frame
-9000048-data-disassemble -s $pc -e "$pc+64" -- 0
-1000007-mpd-select-processor hetProcessorShared/P2
+9000048-data-disassemble -s $pc -e "$pc+4" -- 0
 9000049-file-list-exec-source-files
 9000050-break-list
 9000051-mpd-context-info
-9000052-mpd-list-processor-info
-9000053-stack-info-frame
-9000054-data-disassemble -s $pc -e "$pc+64" -- 0
-1000008-mpd-select-processor hetProcessorShared/P0
-9000055-file-list-exec-source-files
-9000056-break-list
-9000057-mpd-context-info
-9000058-mpd-list-processor-info
-9000059-stack-info-frame
-9000060-data-disassemble -s $pc -e "$pc+64" -- 0
-1000009-mpd-select-processor hetProcessorShared/P1
-9000061-file-list-exec-source-files
-9000062-break-list
-9000063-mpd-context-info
-9000064-mpd-list-processor-info
-9000065-stack-info-frame
-9000066-data-disassemble -s $pc -e "$pc+64" -- 0
-1000010-mpd-select-processor hetProcessorShared/P0
-9000067-file-list-exec-source-files
-9000068-break-list
-9000069-mpd-context-info
-9000070-mpd-list-processor-info
-9000071-stack-info-frame
-9000072-data-disassemble -s $pc -e "$pc+64" -- 0
-1000011-mpd-select-processor hetProcessorShared/P1
-9000073-file-list-exec-source-files
-9000074-break-list
-9000075-mpd-context-info
-9000076-mpd-list-processor-info
-9000077-stack-info-frame
-9000078-data-disassemble -s $pc -e "$pc+64" -- 0
-1000012-mpd-select-processor hetProcessorShared/P0
-9000079-file-list-exec-source-files
-9000080-break-list
-9000081-mpd-context-info
-9000082-mpd-list-processor-info
+9000052-stack-info-frame
+9000053-data-disassemble -s $pc -e "$pc+4" -- 0
+9000054-break-list
+9000055-mpd-context-info
+9000056-stack-info-frame
+9000057-data-list-register-names
+9000058-data-list-register-values r
+9000059-data-list-changed-registers
+9000060-data-disassemble -s $pc -e "$pc+4" -- 0
+9000061-break-list
+9000062-mpd-context-info
+9000063-stack-info-frame
+9000064-stack-list-frames 0 100
+9000065-data-disassemble -s $pc -e "$pc+4" -- 0
+1000003-stack-select-frame 0
+9000066-break-list
+9000067-mpd-context-info
+9000068-stack-info-frame
+9000069-stack-list-frames 0 100
+9000070-data-disassemble -s $pc -e "$pc+4" -- 0
+1000004-stack-select-frame 0
+9000071-break-list
+9000072-mpd-context-info
+9000073-stack-info-frame
+9000074-stack-list-frames 0 100
+9000075-data-disassemble -s $pc -e "$pc+4" -- 0
+1000005-stack-select-frame 1
+9000076-break-list
+9000077-mpd-context-info
+9000078-stack-info-frame
+9000079-stack-list-frames 0 100
+9000080-data-disassemble -s $pc -e "$pc+4" -- 0
+1000006-stack-select-frame 0
+9000081-break-list
+9000082-mpd-context-info
 9000083-stack-info-frame
-9000084-data-disassemble -s $pc -e "$pc+64" -- 0
-1000013-mpd-select-processor hetProcessorShared/P1
-9000085-file-list-exec-source-files
+9000084-stack-list-frames 0 100
+9000085-data-disassemble -s $pc -e "$pc+4" -- 0
+1000007-stack-select-frame 1
 9000086-break-list
 9000087-mpd-context-info
-9000088-mpd-list-processor-info
-9000089-stack-info-frame
-9000090-data-disassemble -s $pc -e "$pc+64" -- 0
-1000014-mpd-select-processor hetProcessorShared/P0
-9000091-file-list-exec-source-files
-9000092-break-list
-9000093-mpd-context-info
-9000094-mpd-list-processor-info
-9000095-stack-info-frame
-9000096-data-disassemble -s $pc -e "$pc+64" -- 0
-1000015-mpd-select-processor hetProcessorShared/P1
-9000097-file-list-exec-source-files
-9000098-break-list
-9000099-mpd-context-info
-9000100-mpd-list-processor-info
-9000101-stack-info-frame
-9000102-data-disassemble -s $pc -e "$pc+64" -- 0
-1000016-mpd-select-processor hetProcessorShared/P0
-9000103-file-list-exec-source-files
-9000104-break-list
-9000105-mpd-context-info
-9000106-mpd-list-processor-info
-9000107-stack-info-frame
-9000108-data-disassemble -s $pc -e "$pc+64" -- 0
-1000017-mpd-select-processor hetProcessorShared/P0
-9000109-file-list-exec-source-files
-9000110-break-list
-9000111-mpd-context-info
-9000112-mpd-list-processor-info
-9000113-stack-info-frame
-9000114-data-disassemble -s $pc -e "$pc+64" -- 0
-1000018-mpd-select-processor hetProcessorShared/P1
-9000115-file-list-exec-source-files
-9000116-break-list
-9000117-mpd-context-info
-9000118-mpd-list-processor-info
-9000119-stack-info-frame
-9000120-data-disassemble -s $pc -e "$pc+64" -- 0
-1000019-mpd-select-processor hetProcessorShared/P1
-9000121-file-list-exec-source-files
-9000122-break-list
-9000123-mpd-context-info
-9000124-mpd-list-processor-info
-9000125-stack-info-frame
-9000126-data-disassemble -s $pc -e "$pc+64" -- 0
-1000020-mpd-select-processor hetProcessorShared/P0
-9000127-file-list-exec-source-files
-9000128-break-list
-9000129-mpd-context-info
-9000130-mpd-list-processor-info
-9000131-stack-info-frame
-9000132-data-disassemble -s $pc -e "$pc+64" -- 0
-1000021-mpd-select-processor hetProcessorShared/P1
-9000133-file-list-exec-source-files
-9000134-break-list
-9000135-mpd-context-info
-9000136-mpd-list-processor-info
-9000137-stack-info-frame
-9000138-data-disassemble -s $pc -e "$pc+64" -- 0
-1000022-mpd-select-processor hetProcessorShared/P0
-9000139-file-list-exec-source-files
-9000140-break-list
-9000141-mpd-context-info
-9000142-mpd-list-processor-info
-9000143-stack-info-frame
-9000144-data-disassemble -s $pc -e "$pc+64" -- 0
-1000023-mpd-select-processor hetProcessorShared/P1
-9000145-file-list-exec-source-files
-9000146-break-list
-9000147-mpd-context-info
-9000148-mpd-list-processor-info
-9000149-stack-info-frame
-9000150-data-disassemble -s $pc -e "$pc+64" -- 0
-1000024-mpd-select-processor hetProcessorShared/P2
-9000151-file-list-exec-source-files
-9000152-break-list
-9000153-mpd-context-info
-9000154-mpd-list-processor-info
-9000155-stack-info-frame
-9000156-data-disassemble -s $pc -e "$pc+64" -- 0
-1000025-mpd-select-processor hetProcessorShared/P0
-9000157-file-list-exec-source-files
-9000158-break-list
-9000159-mpd-context-info
-9000160-mpd-list-processor-info
-9000161-stack-info-frame
-9000162-data-disassemble -s $pc -e "$pc+64" -- 0
+9000088-stack-info-frame
+9000089-stack-list-frames 0 100
+9000090-data-disassemble -s $pc -e "$pc+4" -- 0
+1000008-stack-select-frame 0
+9000091-break-list
+9000092-mpd-context-info
+9000093-stack-info-frame
+9000094-stack-list-frames 0 100
+9000095-data-disassemble -s $pc -e "$pc+4" -- 0
 # End MPD log
